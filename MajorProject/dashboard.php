@@ -1178,32 +1178,57 @@
                     </li>
                 </ul>
 
-                <!-- ACADMICS -->
-                <div class="sub-content-link" id="Acadmic-side-sub-menu" ng-init="items1=['Attendance','Time Table','Semester Registration','Enrollment Form','Elective Subject Opt','Current Subjects']">
+               <!-- ACADMICS -->
+                <div class="sub-content-link" id="Acadmic-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" ng-repeat="x1 in items1">
-                            {{x1}}
+                        <div class="subdata item1" onclick="window.location.replace('attendance.html');">
+                            Attendance
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('timetable.html');">
+                            Time Table
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('semester_regist.html');">
+                            Semester Registration
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('Enrollment Form.html');">
+                            Enrollment Form
                         </div>
                     </div>
                 </div>
-
                 <!-- FEE -->
-                <div class="sub-content-link" id="fee-side-sub-menu" ng-init="items2=['Fee Submission','Fee Receipt','Transanction History','Enrollment Form','Elective Subject opt','Current Subjects']">
+                <div class="sub-content-link" id="fee-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" ng-repeat="x2 in items2">
-                            {{x2}}
+                        <div class="subdata item1" onclick="window.location.replace('fee_submission.html');">
+                            Fee Submission
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('fee_receipt.html');">
+                            Fee Receipt
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('transanction_history.html');">
+                            Transanction History
                         </div>
                     </div>
                 </div>
-
                 <!-- EXAM -->
-                <div class="sub-content-link" id="exam-side-sub-menu" ng-init="items3=['Sessional/Mid Term/ External Marks Statement','Result','Back Papers','Admit Card','Subject Revalution','Exam Time-Table']">
+                <div class="sub-content-link" id="exam-side-sub-menu" ng-init="items3=['Back Papers','Admit Card','Subject Revalution','Exam Time-Table']">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" ng-repeat="x3 in items3">
-                            {{x3}}
+                        <div class="subdata item1" onclick="window.location.replace('result.html');">
+                            Result
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('backpaper.html');">
+                            Back Papers
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('admitcard.html');">
+                            Admit Card
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('sub_reval.html');">
+                            Subject Revalution
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('exam_tt.html');">
+                            Exam Time-Table
                         </div>
                     </div>
                 </div>
