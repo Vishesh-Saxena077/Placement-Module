@@ -1,0 +1,54 @@
+/* Default Theme Light*/
+
+ :root {
+    --clr-bg: #eaeaea;
+    --clr-1: red;
+    --clr-2: #0000dc;
+    --clr-3: #ffffff;
+    --clr-4: rgba(52, 52, 52, 0.134);
+    --clr-5: #000000;
+}
+
+body {
+    background-color: var(--clr-2);
+}
+
+.header {
+    height: 100px;
+}
+
+.header .header-base {
+    background-color: rgb(196, 153, 248);
+    color: rgb(66, 27, 115);
+}
+
+input[type="button"] {
+    background-color: black;
+    float: right;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.infobox {
+    border: 5px solid rgb(196, 153, 248);
+}
+
+.box-head {
+    border-bottom: 5px solid rgb(196, 153, 248);
+    background-color: rgb(196, 153, 248);
+    color: rgb(66, 27, 115);
+}
+
+label {
+    color: rgb(142, 62, 239);
+    font-weight: 500;
+}
+
+@media (max-width:900px) {
+    .header .header-text {
+        font-size: 18px;
+    }
+}
