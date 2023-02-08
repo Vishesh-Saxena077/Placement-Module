@@ -1,0 +1,59 @@
+/* Default Theme Light*/
+
+ :root {
+    --clr-bg: white;
+    --clr-1: #FFFBEB;
+    --clr-2: #495579;
+    --clr-3: #263159;
+    --clr-4: #ffffff;
+}
+
+body {
+    background-color: var(--clr-1);
+}
+
+.header {
+    height: 100px;
+    background-color: var(--clr-4);
+    border-bottom: 2px solid var(--clr-2);
+}
+
+.header .header-base {
+    color: var(--clr-3);
+}
+
+form {
+    background-color: var(--clr-4);
+}
+
+input[type="button"] {
+    background-color: var(--clr-3);
+    float: right;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+
+/* .infobox {
+    border: 2px solid var(--clr-3);
+} */
+
+.box-head {
+    border-bottom: 2px solid var(--clr-3);
+    background-color: var(--clr-3);
+    color: var(--clr-1);
+}
+
+label {
+    color: var(--clr-3);
+    font-weight: 500;
+}
+
+@media (max-width:900px) {
+    .header .header-text {
+        font-size: 18px;
+    }
+}
