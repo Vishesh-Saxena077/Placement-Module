@@ -1,270 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SYTLE SHEET LINK -->
-    <link rel="stylesheet" href="./css/STYLE.css">
-    <link rel="stylesheet" href="./css/hierme.css">
-
-    <!-- CDN Library link -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- charts CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
-    <!-- JQuery File for NavBar -->
-    <script src="./JS/JQFile.js"></script>
-
-    <!-- ICON LIBRARY -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-
     <title>Student | Placement | Training</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            color: black;
+        }
+        .base{
+            display: block;
+            height:100vh;
+            width:100%;
+            background-color: white;
+            overflow-y: auto;
+        }
+        .bodydiv{
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;;
+        }
+        .editorbody{
+            height: 100%;
+            background-color: #F5F5F5;
+            overflow: auto;
+            color: black;
+        }
+        .editor{
+            height: 100%;
+        }
+        .sErrorMessage{
+                display: none;
+        }
+        .sampletestcase{
+            background-color:#D0E8F2;
+        }
+        textarea{
+            background-color:#F5F5F5;
+            color: gray;
+            border:none;
+            outline: none;
+        }
+        @media screen and (max-width:800px) 
+        {
+            .sErrorMessage{
+                display: block;
+            }
+            .base{
+                display: none;
+            }
+        }
+    </style>
 </head>
-
-<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
-
- <!-- Side Nav Bar -->
-    <nav class="sidebar close">
-        <!-- NavBar Heading and Logo -->
-        <header>
-            <div class="img-txt">
-                <span class="image">
-                    <img src="./images/download.jpg" alt="logo">
-                </span>
-
-                <div class="text header-text">
-                    <span class="name">Graphic Era University</span>
-                </div>
-            </div>
-            <i class="uil uil-angle-right-b toggle" id="side-toggle-btn"></i>
-        </header>
-
-        <!-- Side Nav Bar list Content -->
-        <div class="menu-bar">
-            <div class="menu">
-                <!-- Sreach -->
-
-                <ul class="menu-links">
-                    <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
-                        <a href="#">
-                            <i class="uil uil-estate icon"></i>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <!-- Academic -->
-                    <li class="nav-links" id="subEle2">
-                        <a href="#" id="subEle2a">
-                            <i class="uil uil-brain icon"></i>
-                            <span class="text nav-text">Academic</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Placement -->
-                    <li class="nav-links" id="subEle3">
-                        <a href="#">
-                            <i class="uil uil-award-alt icon"></i>
-                            <span class="text nav-text">Placement</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Notice -->
-                    <li class="nav-links" id="subEle4" onclick="window.location.replace('notice.php');">
-                        <a href="#">
-                            <i class="uil uil-bell icon"></i>
-                            <span class="text nav-text">Notice</span>
-                        </a>
-                    </li>
-                    <!-- Fee -->
-                    <li class="nav-links" id="subEle5">
-                        <a href="#">
-                            <i class="uil uil-bill icon"></i>
-                            <span class="text nav-text">Fee</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Exam -->
-                    <li class="nav-links" id="subEle6">
-                        <a href="#">
-                            <i class="uil uil-book-open icon"></i>
-                            <span class="text nav-text">Exam</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Theme -->
-                    <li class="nav-links" id="subEle9">
-                        <a href="#">
-                            <i class="uil uil-swatchbook icon"></i>
-                            <span class="text nav-text">Theme</span>
-                        </a>
-                    </li>
-                    <li class="nav-links clrpicker" id="clrpicker">
-                        <form class="color-picker" action="#">
-                            <fieldset>
-                                <legend class="visually-hidden"> Theme </legend>
-                                <label for="light" class="visually-hidden"> Light </label>
-                                <input title="light" type="radio" name="theme" id="light" checked>
-                                <label for="dark" class="visually-hidden"> Dark </label>
-                                <input title="dark" type="radio" name="theme" id="dark">
-                            </fieldset>
-                        </form>
-                    </li>
-                </ul>
-
-                <!-- ACADMICS -->
-                <div class="sub-content-link" id="Acadmic-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('attendance.php');">
-                            Profile
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('timetable.php');">
-                            Time Table
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('sem_registration.php');">
-                            Semester Registration
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment Form
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
-                            Create Your Resume
-                        </div>
-                    </div>
-                </div>
-                <!-- PLACEMENT -->
-                <div class="sub-content-link" id="Placment-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('hierMe.php');">
-                            Company
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('companyApplied.php');">
-                            Apply Company
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('training.php');">
-                            Training
-                        </div>
-                    </div>
-                </div>
-                <!-- FEE -->
-                <div class="sub-content-link" id="fee-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('feesubmission.php');">
-                            Fee Submission
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feerecipt.php');">
-                            Fee Receipt
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feetransanctionhistory.php');">
-                            Transanction History
-                        </div>
-                    </div>
-                </div>
-                <!-- EXAM -->
-                <div class="sub-content-link" id="exam-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('studentMTM.php');">
-                            Sessional/Mid Term Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('StudentResult.php');">
-                            Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('backpaper.php');">
-                            Back Papers
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('admitcard.php');">
-                            Admit Card
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </nav>
-
-    <!-- Logout Confirmation Dialog Box -->
-    <div class="overlay">
-        <div class="dialogbase">
-            <div class="dialog-box">
-                <div class="logout-text">
-                    Are You Sure Do You Want To Logout?
-                </div>
-                <div class="logout-div-btns">
-                    <button title="yes" type="button" class="dialog-box-btn" id="logout" name="yes" class="logout">
-                    Logout
-                </button>
-                    <button title="cancel" type="button" class="dialog-box-btn" id="cancel" name="cancel" class="cancel">
-                    Cancel
-                </button>
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="alert alert-danger sErrorMessage" role="alert">
+        <h4 class="alert-heading">Sorry!</h4>
+        <p>test supports only the Moniter of laptop screen Screen </p>
+        <hr>
+        <p class="mb-0">Login from the laptop or pc</p>
     </div>
 
-    <!-- Dashboard Content Box -->
-    <section class="homePage">
-        <div class="homePage-base">
+    <div class="p-3 col-md-12 base">
+        <div class="p-3 col-md-12">
+            
+            <div class="p-2">
+                
+                <!-- Head -->
+                <h3 class="col-md-12">GEU</h3>
 
-            <!-- home Page Header -->
-            <div class="head">
-                <div class="head-1">
-                    <div class="head-text">
-                        <div class="pannel-heading"> Placement | Training </div>
+                <!-- Body -->
+                <!-- Compiler-Base body -->
+                <div class="bodydiv">
+                    
+                    <div class="p-2 col-md-6 editorbody">
+                        <p class="col-md-12 p-2"> Q.1 </p>
+                        <div class="col-md-12 p-2">
+                            Lorem ipsum dolor sit amet. Et culpa culpa 33 quia alias non maxime totam qui amet earum et expedita voluptas eum omnis magnam sit vero voluptatem? Hic repudiandae vitae est deleniti nostrum a voluptatem voluptas ut libero assumenda At dolor galisum ut autem tempora. Non dolorem reprehenderit qui architecto voluptatem ut molestias laborum et consequatur natus non recusandae quod sit dolorem sequi.
+                            Aut debitis nihil et porro dicta hic labore reiciendis non mollitia laboriosam qui obcaecati sunt id obcaecati voluptas et molestias mollitia. Ex veniam galisum eos praesentium autem ex aliquid aliquam rem repudiandae architecto rem error amet est doloribus expedita sed consequatur unde.
+                            Sed dolore minus 33 consectetur molestias aut dolor dolor qui dolores laudantium est neque delectus et ducimus molestiae. Eos reprehenderit obcaecati sit quis esse sit mollitia error. Qui harum culpa vel veniam consequuntur ex illo veritatis est aliquam vitae. Qui esse consectetur qui exercitationem eveniet 33 dolorem atque sit nisi voluptatem rem provident consequuntur ad possimus eveniet.
+                            Sed dolore minus 33 consectetur molestias aut dolor dolor qui dolores laudantium est neque delectus et ducimus molestiae. Eos reprehenderit obcaecati sit quis esse sit mollitia error. Qui harum culpa vel veniam consequuntur ex illo veritatis est aliquam vitae. Qui esse consectetur qui exercitationem eveniet 33 dolorem atque sit nisi voluptatem rem provident consequuntur ad possimus eveniet.
+                            Sed dolore minus 33 consectetur molestias aut dolor dolor qui dolores laudantium est neque delectus et ducimus molestiae. Eos reprehenderit obcaecati sit quis esse sit mollitia error. Qui harum culpa vel veniam consequuntur ex illo veritatis est aliquam vitae. Qui esse consectetur qui exercitationem eveniet 33 dolorem atque sit nisi voluptatem rem provident consequuntur ad possimus eveniet.
+                            Sed dolore minus 33 consectetur molestias aut dolor dolor qui dolores laudantium est neque delectus et ducimus molestiae. Eos reprehenderit obcaecati sit quis esse sit mollitia error. Qui harum culpa vel veniam consequuntur ex illo veritatis est aliquam vitae. Qui esse consectetur qui exercitationem eveniet 33 dolorem atque sit nisi voluptatem rem provident consequuntur ad possimus eveniet.
+                            Sed dolore minus 33 consectetur molestias aut dolor dolor qui dolores laudantium est neque delectus et ducimus molestiae. Eos reprehenderit obcaecati sit quis esse sit mollitia error. Qui harum culpa vel veniam consequuntur ex illo veritatis est aliquam vitae. Qui esse consectetur qui exercitationem eveniet 33 dolorem atque sit nisi voluptatem rem provident consequuntur ad possimus eveniet.
+                        </div>
+
+                        <!-- sample test cases -->
+                        <div class="col-md-12 p-3 rounded-4 sampletestcase">
+                            <p class="col-md-12">Sample Test Case 1
+                                <hr>
+                            </p>
+                            <p class="col-md-12">1,2,2,2
+                                <hr>
+                            </p>
+                            <p class="col-md-12">
+                                Output : <span>Output here</span>
+                            </p>
+                        </div>
+
+
                     </div>
-                    <div class="Profile">
-                        <div class="pro-1">
-                            <div class="pro-img" title="User Profile">
-                                <img src="../images/male.jpg" alt="NA" height="100%" width="100%">
-                            </div>
-                            <div class="pro-name">
-                                <i class="uil uil-setting" title="Settings"></i>
-                                <i class="uil uil-signout icon" title="Logout" id="logoutoption"></i>
-                            </div>
+
+                    <div class="col-md-6 d-flex justify-content-center aling-items-center editor">
+                        <div class="col-md-12">
+                            <textarea name="ans" id="" class="h-100 col-md-12">//Code dhere</textarea>
+                        </div>
+                    </div>
+                
+                </div>
+    
+                <!-- Footer -->
+                <div class="col-md-12 p-3">
+                    <div class="col-md-12 d-flex justify-content-between align-items-center gx-2">
+                        <div class="col-md-5 p-2">
+                            <input type="button" class="btn btn-primary" value="Previous" name="previous">
+                            <input type="button" class="btn btn-dark" value="Next" name="next">
+                        </div>
+                         <div class="col-md-3 p-2 d-flex justify-content-end align-items-center">
+                            <input type="button" class="btn btn-primary" value="Submit" name="ansSubmit">
                         </div>
                     </div>
                 </div>
+
             </div>
-
-            <!-- bread crums -->
-            <div class="ss-head">
-                <div class="ss-inner-base">
-                    <h3>Placement | Training</h3>
-                </div>
-            </div>
-
-
-            <div class='main'> 
-               
-            </div>
-
         </div>
-    </section>
-
-
-    <!-- JavaScript file for Theme Changing -->
-<script src="./JS/javascript.js"></script>
-
-
+    </div>   
 </body>
-
 </html>
