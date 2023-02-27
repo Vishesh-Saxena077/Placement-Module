@@ -10,55 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-    <style>
-        body{
-            color: black;
-        }
-        .base{
-            display: block;
-            height:100vh;
-            width:100%;
-            background-color: white;
-            overflow-y: auto;
-        }
-        .bodydiv{
-            height: 600px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;;
-        }
-        .editorbody{
-            height: 100%;
-            background-color: #F5F5F5;
-            overflow: auto;
-            color: black;
-        }
-        .editor{
-            height: 100%;
-        }
-        .sErrorMessage{
-                display: none;
-        }
-        .sampletestcase{
-            background-color:#D0E8F2;
-        }
-        textarea{
-            background-color:#F5F5F5;
-            color: gray;
-            border:none;
-            outline: none;
-        }
-        @media screen and (max-width:800px) 
-        {
-            .sErrorMessage{
-                display: block;
-            }
-            .base{
-                display: none;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="alert alert-danger sErrorMessage" role="alert">
@@ -70,16 +21,16 @@
 
     <div class="p-3 col-md-12 base">
         <div class="p-3 col-md-12">
-            
+
             <div class="p-2">
-                
+
                 <!-- Head -->
                 <h3 class="col-md-12">GEU</h3>
 
                 <!-- Body -->
                 <!-- Compiler-Base body -->
                 <div class="bodydiv">
-                    
+
                     <div class="p-2 col-md-6 editorbody">
                         <p class="col-md-12 p-2"> Q.1 </p>
                         <div class="col-md-12 p-2">
@@ -113,9 +64,9 @@
                             <textarea name="ans" id="" class="h-100 col-md-12">//Code dhere</textarea>
                         </div>
                     </div>
-                
+
                 </div>
-    
+
                 <!-- Footer -->
                 <div class="col-md-12 p-3">
                     <div class="col-md-12 d-flex justify-content-between align-items-center gx-2">
@@ -131,6 +82,6 @@
 
             </div>
         </div>
-    </div>   
+    </div>
 </body>
 </html>
