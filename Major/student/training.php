@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="./css/traing.css">
 </head>
-<body>
+<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
     <div class="alert alert-danger sErrorMessage" role="alert">
         <h4 class="alert-heading">Sorry!</h4>
         <p>test supports only the Moniter of laptop screen Screen </p>
@@ -25,7 +25,11 @@
             <div class="p-2">
 
                 <!-- Head -->
-                <h3 class="col-md-12">GEU</h3>
+                <div class="p-2 d-flex justify-content-between col-md-12">
+                  <h3 class="col-md-3">GEU</h3>
+                  <input type="button" class="btn btn-danger" value="Exit Test" name="exittext">
+                </div>
+
 
                 <!-- Body -->
                 <!-- Compiler-Base body -->
@@ -75,7 +79,7 @@
                             <input type="button" class="btn btn-dark" value="Next" name="next">
                         </div>
                          <div class="col-md-3 p-2 d-flex justify-content-end align-items-center">
-                            <input type="button" class="btn btn-primary" value="Submit" name="ansSubmit">
+                           <input type="button" class="btn btn-primary" value="Submit" name="ansSubmit">
                         </div>
                     </div>
                 </div>
