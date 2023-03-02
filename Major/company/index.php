@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./css/admin.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <!-- charts CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- ICON LIBRARY -->
@@ -23,11 +23,11 @@
 
     <!-- angular Js Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    
-    
+
+
     <!-- JQuery File for NavBar -->
     <script src="./JS/jquery.js"></script>
-    
+
     <title>Dashboard</title>
 
 </head>
@@ -55,20 +55,18 @@
             <div class="menu">
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/admin');">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/admin');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <!-- Academic -->
-                    <li class="nav-links" id="subEle2">
+                    <li class="nav-links" >
                         <a href="#" id="subEle2a">
                             <i class="uil uil-brain icon"></i>
-                            <span class="text nav-text">Academic</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
+                            <span class="text nav-text">Student</span>
+
                         </a>
                     </li>
                     <!-- Exam -->
@@ -88,7 +86,7 @@
                             <span class="text nav-text">Notice</span>
                         </a>
                     </li>
-                    
+
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -97,13 +95,6 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
-                        </a>
-                    </li>
-                    <!-- Staff -->
-                    <li class="nav-links" id="subEle7" onclick="window.location.replace('staffFaculty.php');">
-                        <a href="#">
-                            <i class="uil uil-book-alt icon"></i>
-                            <span class="text nav-text">Staff/Faculty</span>
                         </a>
                     </li>
                     <!-- Theme -->
@@ -123,45 +114,28 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li> 
+                    </li>
                 </ul>
- 
-                <!-- ACADMICS -->
-                <div class="sub-content-link" id="Acadmic-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('studentSection.php')">
-                            Student
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment From
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PLACEMENT -->
+                 <!-- PLACEMENT STUDENT -->
                 <div class="sub-content-link" id="Placement-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('placement.php');">
-                            Company
-                        </div>
+                      <div class="subdata item1" onclick="window.location.replace('newPost.php');">
+                          New Post
+                      </div>
+                      <div class="subdata item1" onclick="window.location.replace('result.php');">
+                          History
+                      </div>
                     </div>
                 </div>
 
-                
+
                 <!-- EXAM -->
                 <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
                         <div class="subdata item1" onclick="window.location.replace('result.php');">
-                            Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('viewResult.php');">
-                            View Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('admitcard.php');">
-                            Admit Card
+                            Create New Exam
                         </div>
                     </div>
                 </div>
@@ -205,7 +179,6 @@
                                 <img src="./images/male.jpg" alt="NA" height="100%" width="100%">
                             </div>
                             <div class="pro-name">
-                                <i class="uil uil-setting" title="Settings"></i>
                                 <i class="uil uil-signout icon" title="Logout" id="logoutoption"></i>
                             </div>
                         </div>
@@ -221,56 +194,25 @@
             </div>
 
 
-            <div class='main'> 
+            <div class='main'>
                 <!-- home Page Box-2 -->
                 <div class="box-2">
                     <div class="box-2_1">
                         <div class="box-content">
                             <p>
-                                Hi!  ADMIN
+                                Hi!  User
                             </p>
-                        </div>   
+                        </div>
                     </div>
                     <hr>
                 </div>
 
 
-                <div class="box-3">
-                    <div class="box-3-innerbase">
-                        <div class="box-3-stats-base">
-                            <div class="box-3-content">
-                                <span>Students</span>
-                                <span>10,000+</span>
-                            </div>
-                            <div class="box-3-avtar"><i class="uil uil-book-reader"></i></div>
-                        </div>
-                        <div class="box-3-stats-base">
-                            <div class="box-3-content">
-                                <span>Awards</span>
-                                <span>20+</span>
-                            </div>
-                            <div class="box-3-avtar"><i class="uil uil-trophy"></i></div>
-                        </div>
-                        <div class="box-3-stats-base">
-                            <div class="box-3-content">
-                                <span>Department</span>
-                                <span>30+</span>
-                            </div>
-                            <div class="box-3-avtar"><i class="uil uil-university"></i></div>
-                        </div>
-                        <div class="box-3-stats-base">
-                            <div class="box-3-content">
-                                <span>Revenu</span>
-                                <span>505$</span>
-                            </div>
-                            <div class="box-3-avtar"><i class="uil uil-usd-circle"></i></div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
 
-            
+
         </div>
     </section>
 
