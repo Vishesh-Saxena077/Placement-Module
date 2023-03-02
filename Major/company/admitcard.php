@@ -7,21 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./css/admitcard.css">
-    <link rel="stylesheet" href="./css/styleStudent.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <!-- charts CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <!-- JQuery File for NavBar -->
-    <script src="./JS/JQFile.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- ICON LIBRARY -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- angular Js Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
     
     <!-- JQuery File for NavBar -->
     <script src="./JS/jquery.js"></script>
@@ -32,13 +34,13 @@
 
 <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
 
- <!-- Side Nav Bar -->
+    <!-- Side Nav Bar -->
     <nav class="sidebar close">
         <!-- NavBar Heading and Logo -->
         <header>
             <div class="img-txt">
                 <span class="image">
-                    <img src="./images/download.jpg" alt="logo">
+                    <img src="../images/download.jpg" alt="logo">
                 </span>
 
                 <div class="text header-text">
@@ -51,11 +53,9 @@
         <!-- Side Nav Bar list Content -->
         <div class="menu-bar">
             <div class="menu">
-                <!-- Sreach -->
-
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/admin');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
@@ -71,10 +71,10 @@
                             </div>
                         </a>
                     </li>
-                    <!-- Placement -->
+                    <!-- Exam -->
                     <li class="nav-links" id="subEle3">
                         <a href="#">
-                            <i class="uil uil-award-alt icon"></i>
+                            <i class="uil uil-book-open icon"></i>
                             <span class="text nav-text">Placement</span>
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
@@ -88,16 +88,7 @@
                             <span class="text nav-text">Notice</span>
                         </a>
                     </li>
-                    <!-- Fee -->
-                    <li class="nav-links" id="subEle5">
-                        <a href="#">
-                            <i class="uil uil-bill icon"></i>
-                            <span class="text nav-text">Fee</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
+                    
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -106,6 +97,13 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
+                        </a>
+                    </li>
+                    <!-- Staff -->
+                    <li class="nav-links" id="subEle7" onclick="window.location.replace('staffFaculty.php');">
+                        <a href="#">
+                            <i class="uil uil-book-alt icon"></i>
+                            <span class="text nav-text">Staff/Faculty</span>
                         </a>
                     </li>
                     <!-- Theme -->
@@ -125,72 +123,42 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li>
+                    </li> 
                 </ul>
-
+ 
                 <!-- ACADMICS -->
                 <div class="sub-content-link" id="Acadmic-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('attendance.php');">
-                            Profile
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('timetable.php');">
-                            Time Table
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('sem_registration.php');">
-                            Semester Registration
+                        <div class="subdata item1" onclick="window.location.replace('studentSection.php')">
+                            Student
                         </div>
                         <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment Form
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
-                            Create Your Resume
+                            Enrollment From
                         </div>
                     </div>
                 </div>
+
                 <!-- PLACEMENT -->
-                <div class="sub-content-link" id="Placment-side-sub-menu">
+                <div class="sub-content-link" id="Placement-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('hierMe.php');">
+                        <div class="subdata item1" onclick="window.location.replace('placement.php');">
                             Company
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('companyApplied.php');">
-                            Apply Company
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('training.php');">
-                            Training
-                        </div>
                     </div>
                 </div>
-                <!-- FEE -->
-                <div class="sub-content-link" id="fee-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('feesubmission.php');">
-                            Fee Submission
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feerecipt.php');">
-                            Fee Receipt
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feetransanctionhistory.php');">
-                            Transanction History
-                        </div>
-                    </div>
-                </div>
+
+                
                 <!-- EXAM -->
-                <div class="sub-content-link" id="exam-side-sub-menu">
+                <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('studentMTM.php');">
-                            Sessional/Mid Term Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('StudentResult.php');">
+                        <div class="subdata item1" onclick="window.location.replace('result.php');">
                             Result
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('backpaper.php');">
-                            Back Papers
+                        <div class="subdata item1" onclick="window.location.replace('viewResult.php');">
+                            View Result
                         </div>
                         <div class="subdata item1" onclick="window.location.replace('admitcard.php');">
                             Admit Card
@@ -275,7 +243,7 @@
                                 <form action="" method="">
                                     <div class="form-header">
                                         <div class="form-title">
-                                            Admint Card                                        
+                                            New Notice                                        
                                         </div>
                                     </div>
                                     <div class="form-body">
@@ -286,7 +254,7 @@
                                         </select>
                                     </div>
                                     <div class="form-footer">
-                                        <input type="button" name="getadmitcard" value="Get Admit Card">
+                                        <input type="button" name="getadmitcard" value="Gat Admit Card">
                                     </div>
                               </form>
 
@@ -309,7 +277,7 @@
 
     <!-- JavaScript file for Theme Changing -->
 
-    <script src="./JS/javascript.js"></script>
+    <script src="./JS/file1.js"></script>
 
 
 </body>

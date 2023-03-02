@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+ 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
-    <link rel="stylesheet" href="./css/noticeStyle.css">
+    <link rel="stylesheet" href="./css/sf.css">
     <link rel="stylesheet" href="./css/main.css">
 
-    <!-- CDN Library link -->
+   <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <!-- charts CDN -->
@@ -35,20 +35,29 @@
             $('#place1').click(function() {
                 $(this).hide();
                 $('#place2').show();
+                $('#place3').show();
+                $('#place4').hide();
                 
                 $('#title1').show();
+                $('#total1').show();
                 $('#title2').hide();
+                $('#total2').hide();
                 
                 $('#sec1').show();
                 $('#sec2').hide();
             });
     
-            $('#place2').click(function() {
+            $('#place3').click(function() {
                 $(this).hide();
+                $('#plce3').hide();
                 $('#place1').show();
+                $('#place4').show();
+                $('#place2').hide();
                 
                 $('#title2').show();
+                $('#total2').show();
                 $('#title1').hide();
+                $('#total1').hide();
                 
                 $('#sec2').show();
                 $('#sec1').hide();
@@ -222,7 +231,7 @@
             <div class="head">
                 <div class="head-1">
                     <div class="head-text">
-                        <div class="pannel-heading"> Placement </div>
+                        <div class="pannel-heading"> Staff / Faculty </div>
                     </div>
                     <div class="Profile">
                         <div class="pro-1">
@@ -241,7 +250,7 @@
             <!-- bread crums -->
             <div class="ss-head">
                 <div class="ss-inner-base">
-                    <h3>Placement</h3>
+                    <h3>Staff / Faculty</h3>
                 </div>
             </div>
 
@@ -252,51 +261,74 @@
                 <div class="box-2">
                     <div class="box-2_1">
                         <div class="box-content">
-
+                            
                             <div class="box-button">
-                                <button id="place1">Publish View Notice</button>
-                                <button id="place2">View Notice's</button>
+                                <button id="place1"> <i class="uil uil-arrow-left"></i> Staff </button>
+                                <button id="place3"> Faculty <i class="uil uil-arrow-right"></i> </button>
+                                <button id="place2" onclick="window.location.replace('addStaff.php')">+ Add Staff</button>
+                                <button id="place4" onclick="window.location.replace('addfaculty.php')">+ Add Faculty</button>
                             </div>
                             
                             <p id="title1">
-                                Publish New Notice
+                               Staff Section
                             </p>
                             <p id="title2">
-                                All Notices
+                                Faculty Section 
                             </p>
-                    
                         </div>   
                     </div>
                     <hr>
+                    <p id="total1">Total Staff: <span>null</span></p>
+                    <p id="total2">Total Faculty: <span>null</span></p>
                 </div>
                 
 
                 <div class="s1_1" id="sec1">
                     <div class="s1_2">
-                        <div class="table_base">
-                            <div class="newNoticeBase">
-                                
-                                <form action="" method="">
-                                    <div class="form-header">
-                                        <div class="form-title">
-                                            New Notice                                        
-                                        </div>
-                                    </div>
-                                    <div class="form-body">
-                                        <input type="text" name="noticetitle" id="" placeholder="Title for Notice">
-                                        <input type="text" name="noticelink" id="" placeholder="link (If Any)">
-                                        <textarea name="NoticeContent">Content</textarea>
-                                    </div>
-                                    <div class="form-footer">
-                                        <input type="button" name="publish" value="Publish">
-                                    </div>
-                              </form>
-
-                            
-                            
-                            
-                            
+                        
+                        <div class="filters">
+                            <div class="inputbase"> 
+                                <input type="search" name="staffname" placeholder="Staff ID"> 
+                                <input type="search" name="factname" placeholder="Name"> 
+                                <input type="button" name="staff_sreach" id="staff_sreach" value="Sreach">
+                            </div>
+                            <hr>
                         </div>
+
+                        <div class="table_base">
+                            <form action="" method="">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th> S.No. </th>
+                                            <th> ID </th>
+                                            <th> Name </th>
+                                            <th> Role </th>
+                                            <th> Salary </th>
+                                            <th> Action </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> <div class="data"> 1 </div> </td>
+                                            <td> <div class="data"> CMKJFFS </div> </td>
+                                            <td> <div class="data"> vishesh </div> </td>
+                                            <td> <div class="data"> Sweper </div> </td>
+                                            <td> <div class="data"> 15000 </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                    <a href="#">
+                                                        <input type="button" value="Edit">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
                         </div>
 
                     </div>
@@ -306,11 +338,12 @@
                     <div class="s1_2">
 
                         <div class="filters">
-                            <div class="inputbase">
-                                <input type="text" name="noticetitle" id="noticetitle" placeholder="Title Name"> 
-                                <input type="month" name="month" id="month">
-                                <input type="button" name="sreach" id="sreach" value="Sreach">
+                            <div class="inputbase"> 
+                                <input type="search" name="staffname" placeholder="Faculty ID"> 
+                                <input type="search" name="factname" placeholder="Name"> 
+                                <input type="button" name="faculty_sreach" id="faculty_sreach" value="Sreach">
                             </div>
+                            <hr>
                         </div>
 
                         <div class="table_base">
@@ -319,27 +352,34 @@
                                     <thead>
                                         <tr>
                                             <th> S.No. </th>
-                                            <th> Title </th>
-                                            <th> Content </th>
+                                            <th> ID </th>
+                                            <th> Name </th>
+                                            <th> Job Profile </th>
+                                            <th> Email </th>
                                             <th> Date </th>
-                                            <th> Link </th>
+                                            <th> Last Date </th>
                                             <th> Action </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td> <div class="data">  1 </div> </td>
-                                            <td> <div class="data"> title </div> </td>
-                                            <td style="overflow:hidden;max-width:150px;"> <div class="data">Content</div> </td>
-                                            <td> <div class="data"> date </div> </td>
-                                            <td> <div class="data"> <a href="#">N/A</a> </div> </td>
+                                            <td> <div class="data"> 1 </div> </td>
+                                            <td> <div class="data"> CMKJFFS </div> </td>
+                                            <td> <div class="data"> Infosys </div> </td>
+                                            <td> <div class="data"> Software Engieneer </div> </td>
+                                            <td> <div class="data"> indfdfdfdfdffo@gmail.com </div> </td>
+                                            <td> <div class="data"> 01-08-2023 </div> </td>
+                                            <td> <div class="data"> 15-08-2023 </div> </td>
                                             <td>
                                                 <div class="data">    
                                                     <a href="#">
-                                                        <input type="button" name="editnotice" value="Edit">
+                                                        <input type="button" value="View">
                                                     </a>
                                                     <a href="#">
-                                                        <input type="button" name="deletenotice" value="Delete">
+                                                        <input type="button" value="Edit">
+                                                    </a>
+                                                    <a href="mailto:">
+                                                        <input type="button" value="mail">
                                                     </a>
                                                 </div>
                                             </td>

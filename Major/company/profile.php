@@ -68,7 +68,7 @@
             
             <div class="w-auto h-auto p-3 ">
                 <div class="w-auto h-auto p-3  ">
-                    <button class="col-md-1" type="button" onclick="window.location.replace('/MajorProject/student')">Back</button>
+                    <button class="col-md-1" type="button" onclick="window.location.replace('/MajorProject/admin')">Back</button>
                     <button class="col-md-1" type="button" onclick="window.location.replace('./profileedit.php')">Edit</button>
 
                     <div class="form-row basediv">
@@ -107,51 +107,30 @@
                                 <div class="form-row col-md-12 ">
 
                                     <div class="p-1 col-md-12 d-flex justify-content-flex-start align-items-center head">
-                                        <h3 class="col-md-12 h-100 ">Course Information</h3>
+                                        <h3 class="col-md-12 h-100 ">Professional Information</h3>
+                                    </div>
+                                    <div class="p-2 col-md-12 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">ID :</div>
+                                        <div class="col-md-6 ">NULL</div>
+                                    </div>
+                                    <div class="p-2 col-md-12 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">Salary :</div>
+                                        <div class="col-md-6 ">NULL</div>
                                     </div>
                                     
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Student Type :</div>
-                                        <div class="col-md-6 ">Regular</div>
-                                    </div>
-                                    
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
+                                    <div class="p-2 col-md-12 d-flex justify-content-center align-items-center">
                                         <div class="col-md-6 label">University :</div>
                                         <div class="col-md-6 ">NULL</div>
                                     </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Course type:</div>
+                                    <div class="p-2 col-md-12 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">Designation:</div>
                                         <div class="col-md-6 ">NULL</div>
                                     </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Course :</div>
+                                    <div class="p-2 col-md-12 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">Department :</div>
                                         <div class="col-md-6 ">	NULL</div>
                                     </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Current Semester :</div>
-                                        <div class="col-md-6 ">NULL</div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Branch :</div>
-                                        <div class="col-md-6 ">NULL</div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Section :</div>
-                                        <div class="col-md-6 ">NULL </div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Placement :</div>
-                                        <div class="col-md-6 ">NULL</div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">University Roll No :</div>
-                                        <div class="col-md-6 ">NULL</div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Enrollment Number :</div>
-                                        <div class="col-md-6 ">GE-NULL</div>
-                                    </div>
-
+                                    
                                 </div>
                             </div>
                            
@@ -167,29 +146,28 @@
                                         <h3 class="col-md-12 h-100 ">Persoanl/Family Information</h3>
                                     </div>
                                     <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Father's Name :</div>
-                                        <div class="col-md-6 ">Name</div>
-                                    </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Mother's :</div>
-                                        <div class="col-md-6 ">Name</div>
+                                        <div class="col-md-6 label">ID Proof Type:</div>
+                                        <div class="col-md-6 ">NULL</div>
                                     </div>
                                     <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
                                         <div class="col-md-6 label">DOB :</div>
-                                        <div class="col-md-6 ">00-00-0000</div>
+                                        <div class="col-md-6 ">NULL</div>
                                     </div>
                                     <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
                                         <div class="col-md-6 label">Blood Group :</div>
-                                        <div class="col-md-6 ">	A- </div>
+                                        <div class="col-md-6 ">	NULL </div>
                                     </div>
-                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Lateral Entry :</div>
-                                        <div class="col-md-6 ">No</div>
-                                    </div>
-                                    
                                     <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
                                         <div class="col-md-6 label">Address :</div>
-                                        <div class="col-md-6 ">adress </div>
+                                        <div class="col-md-6 ">NULL </div>
+                                    </div>
+                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">City :</div>
+                                        <div class="col-md-6 ">NULL </div>
+                                    </div>
+                                    <div class="p-2 col-md-6 d-flex justify-content-center align-items-center">
+                                        <div class="col-md-6 label">State :</div>
+                                        <div class="col-md-6 ">NULL </div>
                                     </div>
 
                                 </div>
@@ -198,32 +176,7 @@
 
                         </div>
 
-                        <div class="h-auto col-md-12 p-3 ">
-                           
-                            <div class="col-md-12 d-flex justify-content-center align-items-center p-3 basebox">
-                                <div class="form-row col-md-12">
-
-                                    <div class="p-1 col-md-12 d-flex justify-content-flex-start align-items-center head">
-                                        <h3 class="col-md-12 h-100 ">Education Information</h3>
-                                    </div>
-                                    <div class="p-2 col-md-4 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">High School % :</div>
-                                        <div class="col-md-6 ">NUll</div>
-                                    </div>
-                                    <div class="p-2 col-md-4 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Intermediate's % :</div>
-                                        <div class="col-md-6 ">NUll</div>
-                                    </div>
-                                    <div class="p-2 col-md-4 d-flex justify-content-center align-items-center">
-                                        <div class="col-md-6 label">Graduation :</div>
-                                        <div class="col-md-6 ">NULL</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                           
-
-                        </div>
+                        
 
                     </div>
 

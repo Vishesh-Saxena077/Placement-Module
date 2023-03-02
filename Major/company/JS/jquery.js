@@ -13,11 +13,11 @@ $(document).ready(function() {
 
     //Placement sub menu
     $('#subEle3').click(function() {
-        $('.menu-links').slideUp();
-        $('#Placment-side-sub-menu').slideDown();
+        $('.menu-links').hide();
+        $('#Placement-side-sub-menu').show();
     });
 
-    //fee sub menu
+    //Fee sub menu
     $('#subEle5').click(function() {
         $('.menu-links').slideUp();
         $('#fee-side-sub-menu').slideDown();
@@ -28,7 +28,7 @@ $(document).ready(function() {
         $('.menu-links').slideUp();
         $('#exam-side-sub-menu').slideDown();
     });
-
+    // ==============================================================
     // Closing sub menu branches
     $('.uil-angle-left-b').click(function() {
         $('.menu-links').slideDown();
@@ -46,27 +46,25 @@ $(document).ready(function() {
         window.location.replace('login.php');
     });
 
-    // side nav bar
-
-    $('#place1').click(function() {
-        $(this).hide();
-        $('#place2').show();
-
-        $('#title1').show();
+    // notice
+    $('#addnotice').click(function() {
+        $('#addnotice').hide();
+        $('#view').show();
         $('#title2').hide();
-
-        $('#sec1').show();
-        $('#sec2').hide();
+        $('#title1').show();
+        $('#newnotice').show();
+        $('#allnotice').hide();
     });
 
-    $('#place2').click(function() {
-        $(this).hide();
-        $('#place1').show();
-
+    $('#view').click(function() {
+        $('#addnotice').show();
+        $('#view').hide();
         $('#title2').show();
         $('#title1').hide();
-
-        $('#sec2').show();
-        $('#sec1').hide();
+        $('#newnotice').hide();
+        $('#allnotice').show();
     });
+
+
+
 });

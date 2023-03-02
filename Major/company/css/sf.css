@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+/* Default Theme Light*/
+
+ :root {
+    --clr-bg: #eaeaea;
+    --clr-1: red;
+    --clr-2: #0000dc;
+    --clr-3: #ffffff;
+    --clr-4: rgba(52, 52, 52, 0.134);
+    --clr-5: #000000;
+}
+
 .s1_1 {
     height: auto;
     width: auto;
@@ -16,7 +29,6 @@
     height: auto;
     width: auto;
     padding: 10px;
-    /* background-color: antiquewhite; */
 }
 
 .s1_1 .s1_2 .filters .inputbase {
@@ -42,20 +54,9 @@
     color: var(--clr-5);
 }
 
-.s1_1 .s1_2 .filters .inputbase label {
-    color: var(--clr-5);
-}
-
-.s1_1 .s1_2 .filters .inputbase input:nth-child(3) {
-    background: linear-gradient(45deg, var(--lg-1), var(--lg-2));
-    font-weight: bold;
-    color: var(--clr-3);
-    letter-spacing: 1px;
-}
-
 .s1_1 .s1_2 .table_base {
     max-height: 300px;
-    width: 100%;
+    width: auto;
     padding: 10px;
     overflow: auto;
     /* background-color: #0000dc; */
@@ -70,10 +71,9 @@
 
 .s1_1 .s1_2 .table_base table tbody td,
 .s1_1 .s1_2 .table_base table thead th {
-    border: 2px solid var(--clr-2);
+    border: 2px solid #0000dc;
     width: auto;
     padding: 10px;
-    text-align: center;
 }
 
 .s1_1 .s1_2 .table_base table thead th {
@@ -83,6 +83,14 @@
 .s1_1 .s1_2 .table_base table thead th,
 .s1_1 .s1_2 .table_base table tbody td .data {
     color: var(--clr-5);
+    text-align: center;
+}
+
+.s1_1 .s1_2 .table_base table tbody td .data {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    /* background-color: var(--clr-4); */
 }
 
 .s1_1 .s1_2 .table_base table tbody td:last-child .data {
@@ -101,8 +109,18 @@
     width: auto;
     padding: 5px 10px 5px 10px;
     font-size: 1rem;
-    outline: transparent;
-    /* border: none; */
+    outline: none;
+    border: none;
+}
+
+#place1,
+#place4,
+#title2,
+#title3,
+#sec2,
+#sec3,
+#total2 {
+    display: none;
 }
 
 .box-content button {
@@ -123,6 +141,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+}
+
+.box-content .box-button button {
+    border: none;
+    outline: none;
+}
+
+.box-content .box-button button:hover {
+    background-color: var(--clr-4);
+    color: var(--clr-5);
 }
 
 
@@ -150,13 +178,6 @@
     }
     .s1_1 .s1_2 .table_base table tbody td:last-child .data {
         flex-direction: column;
-    }
-    .s1_1 .s1_2 .table_base table tbody td:last-child .data a input {
-        width: 200px;
-        /* background-color: aquamarine; */
-    }
-    .s1_1 .s1_2 .table_base table {
-        width: 1000px;
     }
 }
 

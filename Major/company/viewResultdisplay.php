@@ -7,27 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SYTLE SHEET LINK -->
-    <link rel="stylesheet" href="./css/styleStudent.css">
-    <link rel="stylesheet" href="./css/companyapplied.css">
+    <link rel="stylesheet" href="./css/viewResult.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    
     <!-- charts CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
-    <!-- JQuery File for NavBar -->
-    <script src="./JS/JQFile.js"></script>
 
     <!-- ICON LIBRARY -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <!-- angular Js Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
-    <title>Student | Placement | Company Applied</title>
+    <title>Displaying Ressult</title>
 </head>
 
 <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
@@ -38,7 +37,7 @@
         <header>
             <div class="img-txt">
                 <span class="image">
-                    <img src="./images/download.jpg" alt="logo">
+                    <img src="../images/download.jpg" alt="logo">
                 </span>
 
                 <div class="text header-text">
@@ -51,11 +50,9 @@
         <!-- Side Nav Bar list Content -->
         <div class="menu-bar">
             <div class="menu">
-                <!-- Sreach -->
-
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/admin');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
@@ -71,10 +68,10 @@
                             </div>
                         </a>
                     </li>
-                    <!-- Placement -->
+                    <!-- Exam -->
                     <li class="nav-links" id="subEle3">
                         <a href="#">
-                            <i class="uil uil-award-alt icon"></i>
+                            <i class="uil uil-book-open icon"></i>
                             <span class="text nav-text">Placement</span>
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
@@ -88,16 +85,7 @@
                             <span class="text nav-text">Notice</span>
                         </a>
                     </li>
-                    <!-- Fee -->
-                    <li class="nav-links" id="subEle5">
-                        <a href="#">
-                            <i class="uil uil-bill icon"></i>
-                            <span class="text nav-text">Fee</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
+                    
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -106,6 +94,13 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
+                        </a>
+                    </li>
+                    <!-- Staff -->
+                    <li class="nav-links" id="subEle7" onclick="window.location.replace('staffFaculty.php');">
+                        <a href="#">
+                            <i class="uil uil-book-alt icon"></i>
+                            <span class="text nav-text">Staff/Faculty</span>
                         </a>
                     </li>
                     <!-- Theme -->
@@ -125,72 +120,42 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li>
+                    </li> 
                 </ul>
-
+ 
                 <!-- ACADMICS -->
                 <div class="sub-content-link" id="Acadmic-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('attendance.php');">
-                            Profile
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('timetable.php');">
-                            Time Table
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('sem_registration.php');">
-                            Semester Registration
+                        <div class="subdata item1" onclick="window.location.replace('studentSection.php')">
+                            Student
                         </div>
                         <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment Form
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
-                            Create Your Resume
+                            Enrollment From
                         </div>
                     </div>
                 </div>
+
                 <!-- PLACEMENT -->
-                <div class="sub-content-link" id="Placment-side-sub-menu">
+                <div class="sub-content-link" id="Placement-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('hierMe.php');">
+                        <div class="subdata item1" onclick="window.location.replace('placement.php');">
                             Company
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('companyApplied.php');">
-                            Apply Company
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('training.php');">
-                            Training
-                        </div>
                     </div>
                 </div>
-                <!-- FEE -->
-                <div class="sub-content-link" id="fee-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('feesubmission.php');">
-                            Fee Submission
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feerecipt.php');">
-                            Fee Receipt
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('feetransanctionhistory.php');">
-                            Transanction History
-                        </div>
-                    </div>
-                </div>
+
+                
                 <!-- EXAM -->
-                <div class="sub-content-link" id="exam-side-sub-menu">
+                <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('studentMTM.php');">
-                            Sessional/Mid Term Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('StudentResult.php');">
+                        <div class="subdata item1" onclick="window.location.replace('result.php');">
                             Result
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('backpaper.php');">
-                            Back Papers
+                        <div class="subdata item1" onclick="window.location.replace('viewResult.php');">
+                            View Result
                         </div>
                         <div class="subdata item1" onclick="window.location.replace('admitcard.php');">
                             Admit Card
@@ -201,6 +166,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Logout Confirmation Dialog Box -->
     <div class="overlay">
         <div class="dialogbase">
@@ -228,12 +194,12 @@
             <div class="head">
                 <div class="head-1">
                     <div class="head-text">
-                        <div class="pannel-heading"> Placement | Company Applied </div>
+                        <div class="pannel-heading">Displaying Result </div>
                     </div>
                     <div class="Profile">
                         <div class="pro-1">
                             <div class="pro-img" title="User Profile">
-                                <img src="../images/male.jpg" alt="NA" height="100%" width="100%">
+                                <img src="./images/male.jpg" alt="NA" height="100%" width="100%">
                             </div>
                             <div class="pro-name">
                                 <i class="uil uil-setting" title="Settings"></i>
@@ -247,34 +213,34 @@
             <!-- bread crums -->
             <div class="ss-head">
                 <div class="ss-inner-base">
-                    <h3>Placement | Company Applied</h3>
+                    <h3> Exam | Displaying Result </h3>
                 </div>
             </div>
 
+           <div class='main'> 
 
-            <div class='main'> 
                 <!-- home Page Box-2 -->
                 <div class="box-2">
                     <div class="box-2_1">
                         <div class="box-content">
-                            <p id="title2">
-                                Company's You Applied  
-                            </p>
+                            <p> Displaying Result </p>                        
                         </div>   
                     </div>
                     <hr>
                 </div>
-                <div class="s1_1" id="sec2">
+                
+
+               
+
+                <div class="s1_1">
                     <div class="s1_2">
 
-                        <div class="filters">
-                            <div class="inputbase"> 
-                                <input type="search" name="cname" placeholder="Company Name"> 
-                                <input type="search" name="post" placeholder="Post"> 
-                                <input type="button" name="sreach" id="sreach" value="Sreach">
+                        <div class="detail-box">
+                            <div class="detail-inner">
+                                
                             </div>
-                            <hr>
                         </div>
+
 
                         <div class="table_base">
                             <form action="" method="">
@@ -282,24 +248,20 @@
                                     <thead>
                                         <tr>
                                             <th> S.No. </th>
-                                            <th> Company Name </th>
-                                            <th> Post </th>
-                                            <th> Post Status </th>
-                                            <th> Selection Status </th>
+                                            <th> Year/Sem </th>
+                                            <th> SGPA </th>
+                                            <th> Back Paper(s) </th>
+                                            <th> Result Status </th>
                                             <th> Action </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td> <div class="data"> 1 </div> </td>
-                                            <td> <div class="data"> Infosys </div> </td>
-                                            <td> <div class="data"> Software Engieneer </div> </td>
-                                            <td> 
-                                                <div class="data"> 
-                                                        <span>OPEN/CLOSE</span>
-                                                </div> 
-                                            </td>
-                                            <td> <div class="data"> Selected /Placed /Rejected </div> </td>
+                                            <td> <div class="data"> 1 </div> </td>
+                                            <td> <div class="data"> 7.28 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
                                             <td>
                                                 <div class="data">    
                                                     <a href="#">
@@ -312,16 +274,22 @@
                                 </table>
                             </form>
                         </div>
+
                     </div>
                 </div>
-            </div>
 
+                
+
+               
+
+
+            </div>
         </div>
     </section>
 
-
     <!-- JavaScript file for Theme Changing -->
-<script src="./JS/javascript.js"></script>
+
+    <script src="./JS/file1.js"></script>
 
 
 </body>

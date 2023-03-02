@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+/* Default Theme Light*/
+
+ :root {
+    --clr-bg: #eaeaea;
+    --clr-1: red;
+    --clr-2: #0000dc;
+    --clr-3: #ffffff;
+    --clr-4: rgba(52, 52, 52, 0.134);
+    --clr-5: #000000;
+}
+
+.s1_1 {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.s1_1 .s1_2 {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
+
+.s1_1 .s1_2 .s2_2,
+.s1_1 .s1_2 .s2_1 {
+    height: auto;
+    width: auto;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+.s1_1 .s1_2 .s2_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.s1_1 .s1_2 form {
+    width: auto;
+    padding: 10px;
+    max-height: 450px;
+    overflow-y: auto;
+    /* background-color: red; */
+}
+
+.s1_1 .s1_2 form .inputfeild {
+    /* background-color: #0000dc; */
+    height: auto;
+    width: auto;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s1_1 .s1_2 form .inputfeild .UserImg {
+    height: 100px;
+    width: 100px;
+    background-color: var(--clr-bg);
+    padding: 10px;
+}
+
+.s1_1 .s1_2 form .inputfeild .labels {
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+    color: var(--clr-5);
+    /* background-color: #0000dc; */
+    border-bottom: 0.2px solid gray;
+}
+
+.s1_1 .s1_2 form .inputfeild input,
+.s1_1 .s1_2 form .inputfeild textarea {
+    margin-top: 10px;
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    background-color: var(--clr-4);
+    color: var(--clr-5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.main {
+    background-color: red;
+}
+
+
+/* ====================================================================================== */
+
+
+/* ====================================================================================== */
+
+
+/* ====================================================================================== */
+
+@media (max-width:1300px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:900px) {}
+
+
+/* ====================================================================================== */
+
+@media (max-width:800px) {
+    .s1_1 .s1_2 .s2_1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .s1_1 .s1_2 .s2_1 button {
+        width: 80%;
+    }
+    .s1_1 .s1_2 .s2_2 form {
+        flex-direction: column;
+    }
+}
+
+
+/* ====================================================================================== */
+
+@media (max-width:700px) {}
+
+@media (max-width:750px) {}
+
+@media (max-width:630px) {}
+
+
+/* ======================================================================================*/
+
+@media (max-width:500px) {
+    .sidebar {
+        z-index: 200;
+        width: 90%;
+    }
+    .homePage {
+        z-index: 90;
+    }
+    .homePage .homePage-base .head .head-1 .head-text .pannel-heading {
+        display: none;
+    }
+    .homePage .homePage-base .head .head-1 .Profile {
+        background: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-1 .pro-img {
+        height: 40px;
+        width: 40px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-name {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-1 .pro-name i {
+        font-size: 30px;
+    }
+}

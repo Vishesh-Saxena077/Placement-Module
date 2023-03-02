@@ -375,6 +375,9 @@ ul li:hover:before {
 /* ========================================================================== */
 
 
+/* scroll bar */
+
+
 /* width */
 
  ::-webkit-scrollbar {
@@ -392,14 +395,14 @@ ul li:hover:before {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: none;
+    background: var(--color0);
 }
 
 
 /* Handle on hover */
 
  ::-webkit-scrollbar-thumb:hover {
-    background: none;
+    background: var(--color1);
 }
 
 
