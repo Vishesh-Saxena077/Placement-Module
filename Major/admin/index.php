@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./css/admin.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <!-- charts CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- ICON LIBRARY -->
@@ -23,11 +23,11 @@
 
     <!-- angular Js Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    
-    
+
+
     <!-- JQuery File for NavBar -->
     <script src="./JS/jquery.js"></script>
-    
+
     <title>Dashboard</title>
 
 </head>
@@ -88,7 +88,7 @@
                             <span class="text nav-text">Notice</span>
                         </a>
                     </li>
-                    
+
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -123,9 +123,9 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li> 
+                    </li>
                 </ul>
- 
+
                 <!-- ACADMICS -->
                 <div class="sub-content-link" id="Acadmic-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
 
-                
+
                 <!-- EXAM -->
                 <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
@@ -221,7 +221,7 @@
             </div>
 
 
-            <div class='main'> 
+            <div class='main'>
                 <!-- home Page Box-2 -->
                 <div class="box-2">
                     <div class="box-2_1">
@@ -229,7 +229,7 @@
                             <p>
                                 Hi!  ADMIN
                             </p>
-                        </div>   
+                        </div>
                     </div>
                     <hr>
                 </div>
@@ -270,7 +270,7 @@
             </div>
 
 
-            
+
         </div>
     </section>
 
