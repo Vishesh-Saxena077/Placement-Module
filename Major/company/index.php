@@ -63,7 +63,7 @@
                     </li>
                     <!-- Academic -->
                     <li class="nav-links" >
-                        <a href="#" id="subEle2a">
+                        <a href="studentSection.php" id="subEle2a">
                             <i class="uil uil-brain icon"></i>
                             <span class="text nav-text">Student</span>
 
@@ -77,13 +77,6 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
-                        </a>
-                    </li>
-                    <!-- Notice -->
-                    <li class="nav-links" id="subEle4" onclick="window.location.replace('notice.php');">
-                        <a href="#">
-                            <i class="uil uil-bell icon"></i>
-                            <span class="text nav-text">Notice</span>
                         </a>
                     </li>
 
