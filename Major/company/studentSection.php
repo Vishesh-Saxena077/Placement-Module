@@ -225,11 +225,10 @@
                             <!-- <p id="title1">
                                 New Enrollments Request
                             </p> -->
+
                             <p id="title2">
                                 View Student
                             </p>
-
-
                         </div>
                     </div>
                     <hr>
