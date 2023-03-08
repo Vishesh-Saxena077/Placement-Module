@@ -116,7 +116,7 @@
                       <div class="subdata item1" onclick="window.location.replace('newpost.php');">
                           New Post
                       </div>
-                      <div class="subdata item1" onclick="window.location.replace('result.php');">
+                      <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
                           History
                       </div>
                     </div>
