@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/studentSection.css">
+    <link rel="stylesheet" href="./css/StudentSection.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- CDN Library link -->
@@ -79,7 +79,7 @@
           <div class="menu">
               <ul class="menu-links">
                   <!-- Dashboard -->
-                  <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-Module/major/company');">
+                  <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-module/major/admin');">
                       <a href="#">
                           <i class="uil uil-estate icon"></i>
                           <span class="text nav-text">Dashboard</span>
@@ -90,6 +90,7 @@
                       <a href="studentSection.php" id="subEle2a">
                           <i class="uil uil-brain icon"></i>
                           <span class="text nav-text">Student</span>
+
                       </a>
                   </li>
                   <!-- Exam -->

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/noticeStyle.css">
+    <link rel="stylesheet" href="./css/newPost.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+
     <!-- charts CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- ICON LIBRARY -->
@@ -31,25 +31,25 @@
     <script>
         $(document).ready(function() {
 
-            
+
             $('#place1').click(function() {
                 $(this).hide();
                 $('#place2').show();
-                
+
                 $('#title1').show();
                 $('#title2').hide();
-                
+
                 $('#sec1').show();
                 $('#sec2').hide();
             });
-    
+
             $('#place2').click(function() {
                 $(this).hide();
                 $('#place1').show();
-                
+
                 $('#title2').show();
                 $('#title1').hide();
-                
+
                 $('#sec2').show();
                 $('#sec1').hide();
             });
@@ -80,17 +80,17 @@
             <div class="menu">
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/admin');">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-Module/MajorProject/admin');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
-                            <span class="text nav-text">Dashboard</span>
+                            <span class="text nav-text">Company</span>
                         </a>
                     </li>
                     <!-- Academic -->
                     <li class="nav-links" id="subEle2">
                         <a href="#" id="subEle2a">
                             <i class="uil uil-brain icon"></i>
-                            <span class="text nav-text">Academic</span>
+                            <span class="text nav-text">Student</span>
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
@@ -113,7 +113,7 @@
                             <span class="text nav-text">Notice</span>
                         </a>
                     </li>
-                    
+
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -122,13 +122,6 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
-                        </a>
-                    </li>
-                    <!-- Staff -->
-                    <li class="nav-links" id="subEle7" onclick="window.location.replace('staffFaculty.php');">
-                        <a href="#">
-                            <i class="uil uil-book-alt icon"></i>
-                            <span class="text nav-text">Staff/Faculty</span>
                         </a>
                     </li>
                     <!-- Theme -->
@@ -148,9 +141,9 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li> 
+                    </li>
                 </ul>
- 
+
                 <!-- ACADMICS -->
                 <div class="sub-content-link" id="Acadmic-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
@@ -174,7 +167,7 @@
                     </div>
                 </div>
 
-                
+
                 <!-- EXAM -->
                 <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
@@ -194,7 +187,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Logout Confirmation Dialog Box -->
     <div class="overlay">
         <div class="dialogbase">
@@ -213,11 +205,9 @@
             </div>
         </div>
     </div>
-
     <!-- Dashboard Content Box -->
     <section class="homePage">
         <div class="homePage-base">
-
             <!-- home Page Header -->
             <div class="head">
                 <div class="head-1">
@@ -230,136 +220,58 @@
                                 <img src="../images/male.jpg" alt="NA" height="100%" width="100%">
                             </div>
                             <div class="pro-name">
-                                <i class="uil uil-setting" title="Settings"></i>
                                 <i class="uil uil-signout icon" title="Logout" id="logoutoption"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- bread crums -->
             <div class="ss-head">
                 <div class="ss-inner-base">
                     <h3>Placement</h3>
                 </div>
             </div>
-
-
-            <div class='main'> 
-
+            <div class='main'>
                 <!-- home Page Box-2 -->
                 <div class="box-2">
                     <div class="box-2_1">
                         <div class="box-content">
-
-                            <div class="box-button">
-                                <button id="place1">Publish View Notice</button>
-                                <button id="place2">View Notice's</button>
-                            </div>
-                            
                             <p id="title1">
-                                Publish New Notice
+                                New Post
                             </p>
-                            <p id="title2">
-                                All Notices
-                            </p>
-                    
-                        </div>   
+                        </div>
                     </div>
                     <hr>
                 </div>
-                
-
                 <div class="s1_1" id="sec1">
                     <div class="s1_2">
                         <div class="table_base">
                             <div class="newNoticeBase">
-                                
                                 <form action="" method="">
                                     <div class="form-header">
                                         <div class="form-title">
-                                            New Notice                                        
+                                            Create New Form for Post
                                         </div>
                                     </div>
                                     <div class="form-body">
-                                        <input type="text" name="noticetitle" id="" placeholder="Title for Notice">
-                                        <input type="text" name="noticelink" id="" placeholder="link (If Any)">
-                                        <textarea name="NoticeContent">Content</textarea>
+                                      <input type="text" name="noticetitle" id="" placeholder="Role">
+                                      <p>Starting Date</p>
+                                      <input type="date" name="createPostDate" id="">
+                                      <p>End Date</p>
+                                      <input type="date" name="endPostDate" id="">
+                                      <input type="text" name="noticelink" id="" placeholder="link (If Any for form Post)">
+                                      <textarea name="postContent">Content</textarea>
                                     </div>
                                     <div class="form-footer">
-                                        <input type="button" name="publish" value="Publish">
+                                        <input type="button" name="Genrate" value="Genrate">
                                     </div>
                               </form>
-
-                            
-                            
-                            
-                            
-                        </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="s1_1" id="sec2">
-                    <div class="s1_2">
-
-                        <div class="filters">
-                            <div class="inputbase">
-                                <input type="text" name="noticetitle" id="noticetitle" placeholder="Title Name"> 
-                                <input type="month" name="month" id="month">
-                                <input type="button" name="sreach" id="sreach" value="Sreach">
                             </div>
                         </div>
-
-                        <div class="table_base">
-                            <form action="" method="">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th> S.No. </th>
-                                            <th> Title </th>
-                                            <th> Content </th>
-                                            <th> Date </th>
-                                            <th> Link </th>
-                                            <th> Action </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> <div class="data">  1 </div> </td>
-                                            <td> <div class="data"> title </div> </td>
-                                            <td style="overflow:hidden;max-width:150px;"> <div class="data">Content</div> </td>
-                                            <td> <div class="data"> date </div> </td>
-                                            <td> <div class="data"> <a href="#">N/A</a> </div> </td>
-                                            <td>
-                                                <div class="data">    
-                                                    <a href="#">
-                                                        <input type="button" name="editnotice" value="Edit">
-                                                    </a>
-                                                    <a href="#">
-                                                        <input type="button" name="deletenotice" value="Delete">
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-
                     </div>
                 </div>
-
-                
-
-               
-
-
             </div>
-
-            
         </div>
     </section>
 

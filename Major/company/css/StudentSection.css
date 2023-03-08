@@ -55,6 +55,7 @@
 }
 .s1_1 .s1_2 .filters .inputbase input[type="button"] {
   background-image: linear-gradient(45deg, var(--lg-1), var(--lg-2));
+  color: white;
 }
 
 .s1_1 .s1_2 .table_base {

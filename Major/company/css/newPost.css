@@ -127,13 +127,13 @@
     border: none;
 }
 
-#place1,
+/* #place1,
 #title2,
 #title3,
 #sec2,
 #sec3 {
     display: none;
-}
+} */
 
 .box-content button {
     height: auto;
@@ -213,7 +213,7 @@
 }
 
 .s1_1 .s1_2 .table_base .newNoticeBase form .form-body textarea {
-    height: 100px;
+    height: 300px;
 }
 
 .s1_1 .s1_2 .table_base .newNoticeBase form .form-footer {

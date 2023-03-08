@@ -113,7 +113,7 @@
                 <div class="sub-content-link" id="Placement-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                      <div class="subdata item1" onclick="window.location.replace('newPost.php');">
+                      <div class="subdata item1" onclick="window.location.replace('newpost.php');">
                           New Post
                       </div>
                       <div class="subdata item1" onclick="window.location.replace('result.php');">
