@@ -28,7 +28,7 @@
     <!-- JQuery File for NavBar -->
     <script src="./JS/jquery.js"></script>
 
-    <title>Dashboard</title>
+    <title>Company | Dashboard</title>
 
 </head>
 
@@ -55,7 +55,7 @@
             <div class="menu">
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/admin');">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/company');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
@@ -66,7 +66,6 @@
                         <a href="studentSection.php" id="subEle2a">
                             <i class="uil uil-brain icon"></i>
                             <span class="text nav-text">Student</span>
-
                         </a>
                     </li>
                     <!-- Exam -->
@@ -79,7 +78,6 @@
                             </div>
                         </a>
                     </li>
-
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">

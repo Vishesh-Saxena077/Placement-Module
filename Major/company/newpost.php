@@ -80,7 +80,7 @@
           <div class="menu">
               <ul class="menu-links">
                   <!-- Dashboard -->
-                  <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/admin');">
+                  <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/company');">
                       <a href="#">
                           <i class="uil uil-estate icon"></i>
                           <span class="text nav-text">Dashboard</span>
@@ -91,7 +91,6 @@
                       <a href="studentSection.php" id="subEle2a">
                           <i class="uil uil-brain icon"></i>
                           <span class="text nav-text">Student</span>
-
                       </a>
                   </li>
                   <!-- Exam -->
@@ -104,7 +103,6 @@
                           </div>
                       </a>
                   </li>
-
                   <!-- Exam -->
                   <li class="nav-links" id="subEle6">
                       <a href="#">
@@ -141,7 +139,7 @@
                     <div class="subdata item1" onclick="window.location.replace('newpost.php');">
                         New Post
                     </div>
-                    <div class="subdata item1" onclick="window.location.replace('result.php');">
+                    <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
                         History
                     </div>
                   </div>
@@ -236,9 +234,12 @@
                                       <input type="date" name="endPostDate" id="">
                                       <input type="text" name="noticelink" id="" placeholder="link (If Any for form Post)">
                                       <textarea name="postContent">Content</textarea>
+                                      <input type="text" name="criteria1" id="" placeholder="12th Criteria">
+                                      <input type="text" name="criteria2" id="" placeholder="10th Criteria">
+                                      <input type="text" name="criteria3" id="" placeholder="CGPA Criteria">
                                     </div>
                                     <div class="form-footer">
-                                        <input type="button" name="Genrate" value="Genrate">
+                                        <input type="button" name="Genrate" value="Post">
                                     </div>
                               </form>
                             </div>
