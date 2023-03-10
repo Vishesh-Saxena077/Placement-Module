@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/createTest.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -191,14 +191,26 @@
                     <div class="box-2_1">
                         <div class="box-content">
                             <p>
-                                Create New Test 
+                                Create New Test
                             </p>
                         </div>
                     </div>
                     <hr>
                 </div>
 
+                <div class="form-base">
+                  <div class="form-base-inner">
+                    <div class="form-top">
+                      Create New Test
+                    </div>
+                    <div class="form-body">
 
+                    </div>
+                    <div class="form-bottom">
+
+                    </div>
+                  </div>
+                </div>
 
             </div>
 

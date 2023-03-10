@@ -125,7 +125,7 @@
                 <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('result.php');">
+                        <div class="subdata item1" onclick="window.location.replace('createTest.php');">
                             Create New Exam
                         </div>
                     </div>
