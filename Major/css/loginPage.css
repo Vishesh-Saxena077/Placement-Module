@@ -34,6 +34,15 @@ body {
     background-position-y: bottom;
 }
 
+#body2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/img3.png');
+    /* background-color: rgb(40, 28, 255); */
+}
+
 .container {
     height: 600px;
     position: relative;
@@ -50,13 +59,20 @@ body {
     padding: 50px;
 }
 
-.container .form .title {
+.container .form2 {
+    margin-top: 0px;
+    padding: 50px;
+}
+
+.container .form .title,
+.container .form2 .title {
     position: relative;
     font-size: 27px;
     font-weight: 600;
 }
 
-.form .title::before {
+.form .title::before,
+.form2 .title::before {
     content: '';
     position: absolute;
     left: 0;
@@ -67,7 +83,8 @@ body {
     border-radius: 25px;
 }
 
-.form .input-field {
+.form .input-field,
+.form2 .input-field {
     position: relative;
     height: 50px;
     width: 100%;
@@ -123,7 +140,8 @@ body {
     color: var(--c1);
 }
 
-.form .button input {
+.form .button input,
+.form2 .button input {
     border: none;
     color: var(--c5);
     font-size: 20px;
@@ -134,7 +152,8 @@ body {
     border-radius: 5px;
 }
 
-.form .button input:hover {
+.form .button input:hover,
+.form2 .button input:hover {
     background-color: var(--c3);
 }
 
@@ -151,13 +170,15 @@ body {
         backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.13);
     }
-    .container .form {
+    .container .form,
+    .container .form2 {
         margin-top: 0px;
     }
     .title {
         color: var(--c5);
     }
-    .form .title::before {
+    .form .title::before,
+    .form2 .title::before {
         background-color: var(--c5);
     }
     .input-field input,
@@ -166,7 +187,8 @@ body {
         color: var(--c5);
         border-color: var(--c5);
     }
-    .form .contentforg a {
+    .form .contentforg a,
+    .form2 .contentforg a {
         color: var(--c4);
     }
 }
@@ -180,7 +202,8 @@ body {
         backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.795);
     }
-    .form .title {
+    .form .title,
+    .form2 .title {
         color: var(--c6);
     }
     .input-field input,
@@ -188,7 +211,8 @@ body {
         color: var(--c6);
         border-color: var(--c6);
     }
-    .form .contentforg a {
+    .form .contentforg a,
+    .form2 .contentforg a {
         color: var(--c6);
     }
 }
@@ -251,7 +275,8 @@ body {
         border-radius: 0px;
         width: 80%;
     }
-    .container .form {
+    .container .form,
+    .container .form2 {
         padding: 20px;
     }
 }
