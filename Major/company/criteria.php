@@ -59,109 +59,106 @@
 
 <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
 
-     <!-- Side Nav Bar -->
-    <nav class="sidebar close">
-        <!-- NavBar Heading and Logo -->
-        <header>
-            <div class="img-txt">
-                <span class="image">
-                    <img src="../images/download.jpg" alt="logo">
-                </span>
+  <!-- Side Nav Bar -->
+  <nav class="sidebar close">
+      <!-- NavBar Heading and Logo -->
+      <header>
+          <div class="img-txt">
+              <span class="image">
+                  <img src="../images/download.jpg" alt="logo">
+              </span>
 
-                <div class="text header-text">
-                    <span class="name">Graphic Era University</span>
-                </div>
-            </div>
-            <i class="uil uil-angle-right-b toggle" id="side-toggle-btn"></i>
-        </header>
+              <div class="text header-text">
+                  <span class="name">Graphic Era University</span>
+              </div>
+          </div>
+          <i class="uil uil-angle-right-b toggle" id="side-toggle-btn"></i>
+      </header>
 
-        <!-- Side Nav Bar list Content -->
-        <div class="menu-bar">
-            <div class="menu">
-                <ul class="menu-links">
-                    <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/company');">
-                        <a href="#">
-                            <i class="uil uil-estate icon"></i>
-                            <span class="text nav-text">Dashboard</span>
-                        </a>
-                    </li>
-                    <!-- Academic -->
-                    <li class="nav-links" >
-                        <a href="studentSection.php" id="subEle2a">
-                            <i class="uil uil-brain icon"></i>
-                            <span class="text nav-text">Student</span>
-                        </a>
-                    </li>
-                    <!-- Exam -->
-                    <li class="nav-links" id="subEle3">
-                        <a href="#">
-                            <i class="uil uil-book-open icon"></i>
-                            <span class="text nav-text">Placement</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Exam -->
-                    <li class="nav-links" id="subEle6">
-                        <a href="#">
-                            <i class="uil uil-book-open icon"></i>
-                            <span class="text nav-text">Exam</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
-                        </a>
-                    </li>
-                    <!-- Theme -->
-                    <li class="nav-links" id="subEle9">
-                        <a href="#">
-                            <i class="uil uil-swatchbook icon"></i>
-                            <span class="text nav-text">Theme</span>
-                        </a>
-                    </li>
-                    <li class="nav-links clrpicker" id="clrpicker">
-                        <form class="color-picker" action="#">
-                            <fieldset>
-                                <legend class="visually-hidden"> Theme </legend>
-                                <label for="light" class="visually-hidden"> Light </label>
-                                <input title="light" type="radio" name="theme" id="light" checked>
-                                <label for="dark" class="visually-hidden"> Dark </label>
-                                <input title="dark" type="radio" name="theme" id="dark">
-                            </fieldset>
-                        </form>
-                    </li>
-                </ul>
-                 <!-- PLACEMENT STUDENT -->
-                <div class="sub-content-link" id="Placement-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                      <div class="subdata item1" onclick="window.location.replace('newpost.php');">
-                          New Post
-                      </div>
-                      <div class="subdata item1" onclick="window.location.replace('Criteria.php');">
-                          Criteria
-                      </div>
-                      <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
-                          History
-                      </div>
+      <!-- Side Nav Bar list Content -->
+      <div class="menu-bar">
+          <div class="menu">
+              <ul class="menu-links">
+                  <!-- Dashboard -->
+                  <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/company');">
+                      <a href="#">
+                          <i class="uil uil-estate icon"></i>
+                          <span class="text nav-text">Dashboard</span>
+                      </a>
+                  </li>
+                  <!-- Academic -->
+                  <li class="nav-links" >
+                      <a href="studentSection.php" id="subEle2a">
+                          <i class="uil uil-brain icon"></i>
+                          <span class="text nav-text">Student</span>
+                      </a>
+                  </li>
+                  <!-- Exam -->
+                  <li class="nav-links" id="subEle3">
+                      <a href="#">
+                          <i class="uil uil-book-open icon"></i>
+                          <span class="text nav-text">Placement</span>
+                          <div class="submenuindicator">
+                              <i class="uil uil-angle-right icon"></i>
+                          </div>
+                      </a>
+                  </li>
+                  <!-- Exam -->
+                  <li class="nav-links" id="subEle6">
+                      <a href="#">
+                          <i class="uil uil-book-open icon"></i>
+                          <span class="text nav-text">Exam</span>
+                          <div class="submenuindicator">
+                              <i class="uil uil-angle-right icon"></i>
+                          </div>
+                      </a>
+                  </li>
+                  <!-- Theme -->
+                  <li class="nav-links" id="subEle9">
+                      <a href="#">
+                          <i class="uil uil-swatchbook icon"></i>
+                          <span class="text nav-text">Theme</span>
+                      </a>
+                  </li>
+                  <li class="nav-links clrpicker" id="clrpicker">
+                      <form class="color-picker" action="#">
+                          <fieldset>
+                              <legend class="visually-hidden"> Theme </legend>
+                              <label for="light" class="visually-hidden"> Light </label>
+                              <input title="light" type="radio" name="theme" id="light" checked>
+                              <label for="dark" class="visually-hidden"> Dark </label>
+                              <input title="dark" type="radio" name="theme" id="dark">
+                          </fieldset>
+                      </form>
+                  </li>
+              </ul>
+               <!-- PLACEMENT STUDENT -->
+              <div class="sub-content-link" id="Placement-side-sub-menu">
+                  <i class="uil uil-angle-left-b"></i>
+                  <div class="sub-content-link-inner">
+                    <div class="subdata item1" onclick="window.location.replace('newpost.php');">
+                        New Post
                     </div>
-                </div>
-
-
-                <!-- EXAM -->
-                <div class="sub-content-link" id="exam-side-sub-menu" >
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('createTest.php');">
-                            Create New Exam
-                        </div>
+                    <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
+                        History
                     </div>
-                </div>
+                  </div>
+              </div>
 
-            </div>
-        </div>
-    </nav>
+
+              <!-- EXAM -->
+              <div class="sub-content-link" id="exam-side-sub-menu" >
+                  <i class="uil uil-angle-left-b"></i>
+                  <div class="sub-content-link-inner">
+                      <div class="subdata item1" onclick="window.location.replace('result.php');">
+                          Create New Exam
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </nav>
     <!-- Logout Confirmation Dialog Box -->
     <div class="overlay">
         <div class="dialogbase">
@@ -230,13 +227,7 @@
                                         </div>
                                     </div>
                                     <div class="form-body">
-                                      <input type="text" name="noticetitle" id="" placeholder="Role">
-                                      <p>Starting Date</p>
-                                      <input type="date" name="createPostDate" id="">
-                                      <p>End Date</p>
-                                      <input type="date" name="endPostDate" id="">
-                                      <input type="text" name="noticelink" id="" placeholder="link (If Any for form Post)">
-                                      <textarea name="postContent">Content</textarea>
+                                      <input type="text" name="CompanyName" id="" placeholder="Company Name">
                                       <input type="text" name="criteria1" id="" placeholder="12th Criteria">
                                       <input type="text" name="criteria2" id="" placeholder="10th Criteria">
                                       <input type="text" name="criteria3" id="" placeholder="CGPA Criteria">

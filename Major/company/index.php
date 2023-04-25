@@ -114,6 +114,9 @@
                       <div class="subdata item1" onclick="window.location.replace('newpost.php');">
                           New Post
                       </div>
+                      <div class="subdata item1" onclick="window.location.replace('Criteria.php');">
+                          Criteria
+                      </div>
                       <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
                           History
                       </div>

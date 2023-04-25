@@ -32,7 +32,7 @@
 
 <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
 
-   <!-- Side Nav Bar -->
+     <!-- Side Nav Bar -->
     <nav class="sidebar close">
         <!-- NavBar Heading and Logo -->
         <header>
@@ -53,20 +53,17 @@
             <div class="menu">
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/admin');">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('Placement-module/major/company');">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <!-- Academic -->
-                    <li class="nav-links" id="subEle2">
-                        <a href="#" id="subEle2a">
+                    <li class="nav-links" >
+                        <a href="studentSection.php" id="subEle2a">
                             <i class="uil uil-brain icon"></i>
-                            <span class="text nav-text">Academic</span>
-                            <div class="submenuindicator">
-                                <i class="uil uil-angle-right icon"></i>
-                            </div>
+                            <span class="text nav-text">Student</span>
                         </a>
                     </li>
                     <!-- Exam -->
@@ -79,14 +76,6 @@
                             </div>
                         </a>
                     </li>
-                    <!-- Notice -->
-                    <li class="nav-links" id="subEle4" onclick="window.location.replace('notice.php');">
-                        <a href="#">
-                            <i class="uil uil-bell icon"></i>
-                            <span class="text nav-text">Notice</span>
-                        </a>
-                    </li>
-                    
                     <!-- Exam -->
                     <li class="nav-links" id="subEle6">
                         <a href="#">
@@ -95,13 +84,6 @@
                             <div class="submenuindicator">
                                 <i class="uil uil-angle-right icon"></i>
                             </div>
-                        </a>
-                    </li>
-                    <!-- Staff -->
-                    <li class="nav-links" id="subEle7" onclick="window.location.replace('staffFaculty.php');">
-                        <a href="#">
-                            <i class="uil uil-book-alt icon"></i>
-                            <span class="text nav-text">Staff/Faculty</span>
                         </a>
                     </li>
                     <!-- Theme -->
@@ -121,45 +103,31 @@
                                 <input title="dark" type="radio" name="theme" id="dark">
                             </fieldset>
                         </form>
-                    </li> 
+                    </li>
                 </ul>
- 
-                <!-- ACADMICS -->
-                <div class="sub-content-link" id="Acadmic-side-sub-menu">
-                    <i class="uil uil-angle-left-b"></i>
-                    <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('studentSection.php')">
-                            Student
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment From
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PLACEMENT -->
+                 <!-- PLACEMENT STUDENT -->
                 <div class="sub-content-link" id="Placement-side-sub-menu">
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('placement.php');">
-                            Company
-                        </div>
+                      <div class="subdata item1" onclick="window.location.replace('newpost.php');">
+                          New Post
+                      </div>
+                      <div class="subdata item1" onclick="window.location.replace('Criteria.php');">
+                          Criteria
+                      </div>
+                      <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
+                          History
+                      </div>
                     </div>
                 </div>
 
-                
+
                 <!-- EXAM -->
                 <div class="sub-content-link" id="exam-side-sub-menu" >
                     <i class="uil uil-angle-left-b"></i>
                     <div class="sub-content-link-inner">
-                        <div class="subdata item1" onclick="window.location.replace('result.php');">
-                            Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('viewResult.php');">
-                            View Result
-                        </div>
-                        <div class="subdata item1" onclick="window.location.replace('admitcard.php');">
-                            Admit Card
+                        <div class="subdata item1" onclick="window.location.replace('createTest.php');">
+                            Create New Exam
                         </div>
                     </div>
                 </div>
