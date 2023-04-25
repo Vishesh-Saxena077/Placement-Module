@@ -210,7 +210,7 @@
                     <div class="box-2_1">
                         <div class="box-content">
                             <p id="title1">
-                                New Post
+                                Criteria
                             </p>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                                 <form action="" method="">
                                     <div class="form-header">
                                         <div class="form-title">
-                                            Create New Form for Post
+                                            Create New Criteria
                                         </div>
                                     </div>
                                     <div class="form-body">
@@ -233,7 +233,7 @@
                                       <input type="text" name="criteria3" id="" placeholder="CGPA Criteria">
                                     </div>
                                     <div class="form-footer">
-                                        <input type="button" name="Genrate" value="Post">
+                                        <input type="button" name="Submit" value="Submit">
                                     </div>
                               </form>
                             </div>
