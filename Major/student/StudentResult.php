@@ -53,7 +53,7 @@
 
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-Module/Major/student/')">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
@@ -279,7 +279,7 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th> S.No. </th>
+                                            <th> # </th>
                                             <th> Year/Sem </th>
                                             <th> SGPA </th>
                                             <th> Back Paper(s) </th>
@@ -288,6 +288,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <!-- sem 1 -->
                                         <tr>
                                             <td> <div class="data"> 1 </div> </td>
                                             <td> <div class="data"> 1 </div> </td>
@@ -302,19 +303,137 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        <!-- sem 2 -->
+                                        <tr>
+                                            <td> <div class="data"> 2 </div> </td>
+                                            <td> <div class="data"> 2 </div> </td>
+                                            <td> <div class="data"> 8.79 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- sem 3 -->
+                                        <tr>
+                                            <td> <div class="data"> 3 </div> </td>
+                                            <td> <div class="data"> 3 </div> </td>
+                                            <td> <div class="data"> 9.33 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- sem 4 -->
+                                        <tr>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 8.19 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- sem 5 -->
+                                        <tr>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 5 </div> </td>
+                                            <td> <div class="data"> 7.58 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- sem 6 -->
+                                        <tr>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 6 </div> </td>
+                                            <td> <div class="data"> 7.42 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- sem 7 -->
+                                        <tr>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 7 </div> </td>
+                                            <td> <div class="data"> 8.47 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <!-- sem 8 -->
+                                        <tr>
+                                            <td> <div class="data"> 4 </div> </td>
+                                            <td> <div class="data"> 8 </div> </td>
+                                            <td> <div class="data"> 8.5 </div> </td>
+                                            <td> <div class="data"> 0 </div> </td>
+                                            <td> <div class="data"> pass </div> </td>
+                                            <td>
+                                                <div class="data">    
+                                                    <a href="#">
+                                                        <input type="button" value="View">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                       
                                     </tbody>
                                 </table>
                             </form>
                         </div>
+<hr>
+<!-- home Page Box-2 -->
+                <div class="box-2">
+                    <div class="box-2_1">
+                        <div class="box-content">
+                            <p> Graph for Semester Result's </p>                        
+                        </div>   
+                    </div>
+                    <hr>
+                </div>
+                        <div>
+  <canvas id="myChart"></canvas>
+</div>
 
                     </div>
                 </div>
-
-                
-
-               
-
-
             </div>
         </div>
     </section>
@@ -322,6 +441,32 @@
     <!-- JavaScript file for Theme Changing -->
 
     <script src="./JS/javascript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
+      datasets: [{
+        label: '',
+        data: [7.8, 8.79, 9.33, 8.19, 7.58, 7.42, 8.47, 8.5],
+        borderWidth: 1,
+        backgroundColor: 'green',
+      }]
+    },
+    // options: {
+    //   scales: {
+    //     y: {
+    //       beginAtZero: true
+    //     }
+    //   }
+    // }
+  });
+</script>
 
 
 </body>
