@@ -314,7 +314,7 @@
 
                 <div class="form-row">
                   <div class="h-auto w-auto col-md-6 p-2">
-                      <input type="button" class="btn btn-primary " name="enroll_me" type="submit" value="back" onclick="window.location.replace('/MajorProject/student')">
+                      <input type="button" class="btn btn-primary " name="enroll_me" type="submit" value="back" onclick="window.location.replace('/Placement-Module/Major/admin/')">
                     </div>
                     <div class="h-auto w-auto col-md-6 p-2">
                         <input type="button" class="btn btn-primary " name="enroll_me" type="submit" value="Apply">
