@@ -134,6 +134,9 @@
                         <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
                             Enrollment From
                         </div>
+                        <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
+                            Genrate time table
+                        </div>
                     </div>
                 </div>
 
