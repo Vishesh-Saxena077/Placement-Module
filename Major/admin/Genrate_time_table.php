@@ -185,212 +185,130 @@
                 <p> Genrate Time Table </p>
               </div>
             </div>
-            
           </div>
           <div class="s1_1" id="sec1">
             <div class="s1_2">
               <div class="table_base">
                 <div class="newNoticeBase">
-                        <form action="" method="">
-                            <div class="form-header">
-                                <div class="form-title">
-                                    Genrate time table                                        
-                                </div>
-                            </div>
-                            <div class="form-body">
-                                <label for="sem">Select Semester</label>
-                                <select id="sem" name="sem" required>
-                                    <option value="">Select Semester</option>
-                                    <option value="s1">1</option>
-                                    <option value="s2">2</option>
-                                    <option value="s3">3</option>
-                                    <option value="s4">4</option>
-                                    <option value="s5">5</option>
-                                    <option value="s6">6</option>
-                                    <option value="s7">7</option>
-                                    <option value="s8">8</option>
-                                </select>
-                              
-                                <h1>Monday</h1>
-                                <input type="text" name="day" id="day" value="Monday" placeholder="Monday" required readonly>
-
-                                <label for="m1">8:00am - 9:00am:</label>
-                                <input type="text" id="m1" name="m1" required>
-                                <label for="m2">9:00am - 10:00am:</label>
-                                <input type="text" id="m2" name="m2" required>
-                              <label for="m3">10:00am - 11:00am:</label>
-                <input type="text" id="m3" name="m3">
-                
-                
-                <label for="m4">11:00am - 12:00pm:</label>
-                <input type="text" id="m4" name="m4">
-                
-                
-                <label for="m5">12:00pm - 2:00pm:</label>
-                <input type="text" id="m5" name="m5">
-                
-                
-                <label for="m6">2:00pm - 3:00pm:</label>
-                <input type="text" id="m6" name="m6">
-                
-                
-                <label for="m7">3:00pm - 4:00pm:</label>
-                <input type="text" id="m7" name="m7">
-                
-                
-                <label for="m8">4:00pm - 5:00pm:</label>
-                <input type="text" id="m8" name="m8">
-                
-                
-                
-                <h1>Tuesday</h1>
-                <input type="text" name="day" id="day" value="Tuesday" placeholder="Tuesday" required readonly>
-                <label for="t1">8:00am - 9:00am:</label>
-                <input type="text" id="t1" name="t1">
-                
-                
-                <label for="t2">9:00am - 10:00am:</label>
-                <input type="text" id="t2" name="t2">
-                
-                
-                <label for="t3">10:00am - 11:00am:</label>
-                <input type="text" id="t3" name="t3">
-                
-                
-                <label for="t4">11:00am - 12:00pm:</label>
-                <input type="text" id="t4" name="t4">
-                
-                
-                <label for="t5">12:00pm - 2:00pm:</label>
-                <input type="text" id="t5" name="t5">
-                
-                
-                <label for="t6">2:00pm - 3:00pm:</label>
-                <input type="text" id="t6" name="t6">
-                
-                
-                <label for="t7">3:00pm - 4:00pm:</label>
-                <input type="text" id="t7" name="t7">
-                
-                
-                <label for="t8">4:00pm - 5:00pm:</label>
-                <input type="text" id="t8" name="t8">
-                
-                
-                
-                <h1>Wednesday</h1>
-                <input type="text" name="day" id="day" value="Wednesday" placeholder="Wednesday" required readonly>
-                <label for="w1">8:00am - 9:00am:</label>
-                <input type="text" id="w1" name="w1">
-                
-                
-                <label for="w2">9:00am - 10:00am:</label>
-                <input type="text" id="w2" name="w2">
-                
-                
-                <label for="w3">10:00am - 11:00am:</label>
-                <input type="text" id="w3" name="w3">
-                
-                
-                <label for="w4">11:00am - 12:00pm:</label>
-                <input type="text" id="w4" name="w4">
-                
-                
-                <label for="w5">12:00pm - 2:00pm:</label>
-                <input type="text" id="w5" name="w5">
-                
-                
-                <label for="w6">2:00pm - 3:00pm:</label>
-                <input type="text" id="w6" name="w6">
-                
-                
-                <label for="w7">3:00pm - 4:00pm:</label>
-                <input type="text" id="w7" name="w7">
-                
-                
-                <label for="w8">4:00pm - 5:00pm:</label>
-                <input type="text" id="w8" name="w8">
-                
-                
-                
-                <h1>Thursday</h1>
-                <input type="text" name="day" id="day" value="Thursday" placeholder="Thursday" required readonly>
-                <label for="th1">8:00am - 9:00am:</label>
-                <input type="text" id="th1" name="th1">
-                
-                
-                <label for="th2">9:00am - 10:00am:</label>
-                <input type="text" id="th2" name="th2">
-                
-                
-                <label for="th3">10:00am - 11:00am:</label>
-                <input type="text" id="th3" name="th3">
-                
-                
-                <label for="th4">11:00am - 12:00pm:</label>
-                <input type="text" id="th4" name="th4">
-                
-                
-                <label for="th5">12:00pm - 2:00pm:</label>
-                <input type="text" id="th5" name="th5">
-                
-                
-                <label for="th6">2:00pm - 3:00pm:</label>
-                <input type="text" id="th6" name="th6">
-                
-                
-                <label for="th7">3:00pm - 4:00pm:</label>
-                <input type="text" id="th7" name="th7">
-                
-                
-                <label for="th8">4:00pm - 5:00pm:</label>
-                <input type="text" id="th8" name="th8">
-                
-                
-                <h1>Friday</h1>
-                <input type="text" name="day" id="day" value="Friday" placeholder="Friday" required readonly>
-                <label for="f1">8:00am - 9:00am:</label>
-                <input type="text" id="f1" name="f1">
-                
-                
-                <label for="f2">9:00am - 10:00am:</label>
-                <input type="text" id="f2" name="f2">
-                
-                
-                <label for="f3">10:00am - 11:00am:</label>
-                <input type="text" id="f3" name="f3">
-                
-                
-                <label for="f4">11:00am - 12:00pm:</label>
-                <input type="text" id="f4" name="f4">
-                
-                
-                <label for="f5">12:00pm - 2:00pm:</label>
-                <input type="text" id="f5" name="f5">
-                
-                
-                <label for="f6">2:00pm - 3:00pm:</label>
-                <input type="text" id="f6" name="f6">
-                
-                
-                <label for="f7">3:00pm - 4:00pm:</label>
-                <input type="text" id="f7" name="f7">
-                
-                
-                <label for="f8">4:00pm - 5:00pm:</label>
-                <input type="text" id="f8" name="f8">
-                                
-                            </div>
-                            <div class="form-footer">
-                                <input type="button" name="Genrate" value="Genrate">
-                            </div>
-                        </form>
+                  <form action="" method="">
+                    <div class="form-header">
+                      <div class="form-title"> Genrate time table </div>
                     </div>
-                </div> 
+                    <div class="form-body">
+                      <label for="sem">Select Semester</label>
+                      <select id="sem" name="sem" required>
+                        <option value="">Select Semester</option>
+                        <option value="s1">1</option>
+                        <option value="s2">2</option>
+                        <option value="s3">3</option>
+                        <option value="s4">4</option>
+                        <option value="s5">5</option>
+                        <option value="s6">6</option>
+                        <option value="s7">7</option>
+                        <option value="s8">8</option>
+                      </select>
+                      <h1>Monday</h1>
+                      <input type="text" name="day" id="day" value="Monday" placeholder="Monday" required readonly>
+                      <label for="m1">8:00am - 9:00am:</label>
+                      <input type="text" id="m1" name="m1" required>
+                      <label for="m2">9:00am - 10:00am:</label>
+                      <input type="text" id="m2" name="m2" required>
+                      <label for="m3">10:00am - 11:00am:</label>
+                      <input type="text" id="m3" name="m3">
+                      <label for="m4">11:00am - 12:00pm:</label>
+                      <input type="text" id="m4" name="m4">
+                      <label for="m5">12:00pm - 2:00pm:</label>
+                      <input type="text" id="m5" name="m5">
+                      <label for="m6">2:00pm - 3:00pm:</label>
+                      <input type="text" id="m6" name="m6">
+                      <label for="m7">3:00pm - 4:00pm:</label>
+                      <input type="text" id="m7" name="m7">
+                      <label for="m8">4:00pm - 5:00pm:</label>
+                      <input type="text" id="m8" name="m8">
+                      <h1>Tuesday</h1>
+                      <input type="text" name="day" id="day" value="Tuesday" placeholder="Tuesday" required readonly>
+                      <label for="t1">8:00am - 9:00am:</label>
+                      <input type="text" id="t1" name="t1">
+                      <label for="t2">9:00am - 10:00am:</label>
+                      <input type="text" id="t2" name="t2">
+                      <label for="t3">10:00am - 11:00am:</label>
+                      <input type="text" id="t3" name="t3">
+                      <label for="t4">11:00am - 12:00pm:</label>
+                      <input type="text" id="t4" name="t4">
+                      <label for="t5">12:00pm - 2:00pm:</label>
+                      <input type="text" id="t5" name="t5">
+                      <label for="t6">2:00pm - 3:00pm:</label>
+                      <input type="text" id="t6" name="t6">
+                      <label for="t7">3:00pm - 4:00pm:</label>
+                      <input type="text" id="t7" name="t7">
+                      <label for="t8">4:00pm - 5:00pm:</label>
+                      <input type="text" id="t8" name="t8">
+                      <h1>Wednesday</h1>
+                      <input type="text" name="day" id="day" value="Wednesday" placeholder="Wednesday" required readonly>
+                      <label for="w1">8:00am - 9:00am:</label>
+                      <input type="text" id="w1" name="w1">
+                      <label for="w2">9:00am - 10:00am:</label>
+                      <input type="text" id="w2" name="w2">
+                      <label for="w3">10:00am - 11:00am:</label>
+                      <input type="text" id="w3" name="w3">
+                      <label for="w4">11:00am - 12:00pm:</label>
+                      <input type="text" id="w4" name="w4">
+                      <label for="w5">12:00pm - 2:00pm:</label>
+                      <input type="text" id="w5" name="w5">
+                      <label for="w6">2:00pm - 3:00pm:</label>
+                      <input type="text" id="w6" name="w6">
+                      <label for="w7">3:00pm - 4:00pm:</label>
+                      <input type="text" id="w7" name="w7">
+                      <label for="w8">4:00pm - 5:00pm:</label>
+                      <input type="text" id="w8" name="w8">
+                      <h1>Thursday</h1>
+                      <input type="text" name="day" id="day" value="Thursday" placeholder="Thursday" required readonly>
+                      <label for="th1">8:00am - 9:00am:</label>
+                      <input type="text" id="th1" name="th1">
+                      <label for="th2">9:00am - 10:00am:</label>
+                      <input type="text" id="th2" name="th2">
+                      <label for="th3">10:00am - 11:00am:</label>
+                      <input type="text" id="th3" name="th3">
+                      <label for="th4">11:00am - 12:00pm:</label>
+                      <input type="text" id="th4" name="th4">
+                      <label for="th5">12:00pm - 2:00pm:</label>
+                      <input type="text" id="th5" name="th5">
+                      <label for="th6">2:00pm - 3:00pm:</label>
+                      <input type="text" id="th6" name="th6">
+                      <label for="th7">3:00pm - 4:00pm:</label>
+                      <input type="text" id="th7" name="th7">
+                      <label for="th8">4:00pm - 5:00pm:</label>
+                      <input type="text" id="th8" name="th8">
+                      <h1>Friday</h1>
+                      <input type="text" name="day" id="day" value="Friday" placeholder="Friday" required readonly>
+                      <label for="f1">8:00am - 9:00am:</label>
+                      <input type="text" id="f1" name="f1">
+                      <label for="f2">9:00am - 10:00am:</label>
+                      <input type="text" id="f2" name="f2">
+                      <label for="f3">10:00am - 11:00am:</label>
+                      <input type="text" id="f3" name="f3">
+                      <label for="f4">11:00am - 12:00pm:</label>
+                      <input type="text" id="f4" name="f4">
+                      <label for="f5">12:00pm - 2:00pm:</label>
+                      <input type="text" id="f5" name="f5">
+                      <label for="f6">2:00pm - 3:00pm:</label>
+                      <input type="text" id="f6" name="f6">
+                      <label for="f7">3:00pm - 4:00pm:</label>
+                      <input type="text" id="f7" name="f7">
+                      <label for="f8">4:00pm - 5:00pm:</label>
+                      <input type="text" id="f8" name="f8">
+                    </div>
+                    <div class="form-footer">
+                      <input type="button" name="Genrate" value="Genrate">
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
     </section>
-    <!-- JavaScript file for Theme Changing --><script src="./JS/file1.js"></script>
+    <!-- JavaScript file for Theme Changing -->
+    <script src="./JS/file1.js"></script>
   </body>
 </html>
