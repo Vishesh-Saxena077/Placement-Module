@@ -139,9 +139,7 @@
                         <div class="subdata item1" onclick="window.location.replace('sem_registration.php');">
                             Semester Registration
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
-                            Enrollment Form
-                        </div>
+                       
                         <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
                             Create Your Resume
                         </div>
