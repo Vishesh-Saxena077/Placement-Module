@@ -1,0 +1,13 @@
+.s1_1 {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.s1_1 .s1_2 {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
