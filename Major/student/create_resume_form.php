@@ -295,7 +295,7 @@
                       </ol>
                     </div>
                     <div class="form-footer">
-                      <input type="button" name="Next" value="Next">
+                      <input type="button" name="Next" value="Next" onclick="window.location.replace('displayresume.html');">
                     </div>
                   </form>
                 </div>

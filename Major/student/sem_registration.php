@@ -53,7 +53,7 @@
 
                 <ul class="menu-links">
                     <!-- Dashboard -->
-                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
+                    <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-module/Major/student')">
                         <a href="#">
                             <i class="uil uil-estate icon"></i>
                             <span class="text nav-text">Dashboard</span>
@@ -142,7 +142,7 @@
                         <div class="subdata item1" onclick="window.location.replace('enrollmentform.php');">
                             Enrollment Form
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
+                        <div class="subdata item1" onclick="window.location.replace('create_resume_form.php');">
                             Create Your Resume
                         </div>
                     </div>

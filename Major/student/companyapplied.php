@@ -142,9 +142,8 @@
                             Semester Registration
                         </div>
                         
-                        <div class="subdata item1" onclick="window.location.replace('https://www.overleaf.com/latex/templates/indian-institute-of-technology-bombay-resume/fgnpzhygqxrq.php');">
-                            Create Your Resume
-                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('create_resume_form.php');"> Create Your Resume </div>
+
                     </div>
                 </div>
                 <!-- PLACEMENT -->
