@@ -266,25 +266,32 @@
                           <input type="text" name="Certificate_name1" placeholder="Certificate Name">
                           <label for="">Organization Name</label>
                           <input type="text" name="Certificate_org_name1" placeholder="Organization Name">
-                          <label for="">Date</label>
-                          <input type="date" name="Certificate_date1">
+                          <label for="">Start Date</label>
+                          <input type="month" name="Certificate_start_date1">
+                          <label for="">End Date</label>
+                          <input type="month" name="Certificate_end_date1">
                         </li>
                         <li>
                           <label for="Certificate_name2">Certificate Name</label>
                           <input type="text" name="Certificate_name2" placeholder="Certificate Name">
                           <label for="">Organization Name</label>
                           <input type="text" name="Certificate_org_name2" placeholder="Organization Name">
-                          <label for="">Date</label>
-                          <input type="date" name="Certificate_date2">
+                          <label for="">Start Date</label>
+                          <input type="month" name="Certificate_start_date2">
+                          <label for="">End Date</label>
+                          <input type="month" name="Certificate_end_date2">
                         </li>
                         <li>
                           <label for="Certificate_name3">Certificate Name</label>
                           <input type="text" name="Certificate_name3" placeholder="Certificate Name">
                           <label for="">Organization Name</label>
                           <input type="text" name="Certificate_org_name3" placeholder="Organization Name">
-                          <label for="">Date</label>
-                          <input type="date" name="Certificate_date3">
+                          <label for="">Start Date</label>
+                          <input type="month" name="Certificate_start_date3">
+                          <label for="">End Date</label>
+                          <input type="month" name="Certificate_end_date3">
                         </li>
+                        
                       </ol>
                     </div>
                     <div class="form-footer">
