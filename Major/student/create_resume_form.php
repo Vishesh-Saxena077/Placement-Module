@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SYTLE SHEET LINK -->
     <link rel="stylesheet" href="./css/styleStudent.css">
-    <link rel="stylesheet" href="./css/create_resume.css">
+    <link rel="stylesheet" href="./css/CreateResume.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- charts CDN -->
@@ -16,7 +16,7 @@
     <script src="./JS/JQFile.js"></script>
     <!-- ICON LIBRARY -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Student | Acadmics | Create Resume</title>
+    <title>Student | Dashboard</title>
   </head>
   <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
     <!-- Side Nav Bar -->
@@ -39,7 +39,7 @@
           <!-- Sreach -->
           <ul class="menu-links">
             <!-- Dashboard -->
-            <li class="nav-links" id="subEle1" onclick="window.location.replace('/MajorProject/student')">
+            <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-Module/Major/student')">
               <a href="#">
                 <i class="uil uil-estate icon"></i>
                 <span class="text nav-text">Dashboard</span>
@@ -171,15 +171,14 @@
         <div class="head">
           <div class="head-1">
             <div class="head-text">
-              <div class="pannel-heading"> Create Resume</div>
+              <div class="pannel-heading"> Resume Form </div>
             </div>
             <div class="Profile">
               <div class="pro-1">
-                <div class="pro-img" title="User Profile">
-                  <img src="../images/male.jpg" alt="NA" height="100%" width="100%">
+                <div class="pro-img" title="User Profile" onclick="window.location.replace('profile.php');">
+                  <img src="./images/male.jpg" alt="NA" height="100%" width="100%">
                 </div>
                 <div class="pro-name">
-                  <i class="uil uil-setting" title="Settings"></i>
                   <i class="uil uil-signout icon" title="Logout" id="logoutoption"></i>
                 </div>
               </div>
@@ -189,24 +188,115 @@
         <!-- bread crums -->
         <div class="ss-head">
           <div class="ss-inner-base">
-            <h3>Create Resume</h3>
+            <h3> Resume Form </h3>
           </div>
         </div>
+        <!-- Box -->
         <div class='main'>
-          <div class="s1_1" id="sec2">
+          <div class="s1_1" id="sec1">
             <div class="s1_2">
-                <div class="form-base">
-                    <form action="" method="post" id="form1" name="form1">
-                        <input type="text" name="foi" id="foi" placeholder="Feild of Intrest">
-                        <span>e.g: Web Development, Mobile Developer etc</span>
-                        <input type="text" name="tech_skills" id="tech_skills" placeholder="tech skills">
-                        <span>e.g: HTML, CSS, JS etc</span>                        
-                        <input type="text" name="tools" id="tools" palceholder="Tools">
-                    </form>
+              <div class="table_base">
+                <div class="newNoticeBase">
+                  <form action="" method="">
+                    <div class="form-header">
+                      <div class="form-title"> Resume Info </div>
+                    </div>
+                    <div class="form-body">
+                      <!-- skills -->
+                      <h3>Skills</h3>
+                      <input type="text" name="skills" id="skills" placeholder="Skills">
+                      <!-- skills -->
+                      <h3>Hobbies</h3>
+                      <input type="text" name="hobbies" id="hobbies" placeholder="hobbies">
+                      <!-- Tools -->
+                      <h3>Tools</h3>
+                      <input type="text" name="Tools" id="Tools" placeholder="Tools">
+                      <!-- skills -->
+                      <h3>Languages</h3>
+                      <input type="text" name="lang" id="lang" placeholder="Languages">
+                      <!-- Experince -->
+                      <ol>
+                        <h3>Experince</h3>
+                        <li>
+                          <label for="org_name1">Organization Name</label>
+                          <input type="text" name="org_name1" placeholder="Organization Name">
+                          <label for="org_start_date1">Start Date</label>
+                          <input type="month" name="org_start_date1">
+                          <label for="org_end_date1">End Date</label>
+                          <input type="month" name="org_end_date1">
+                          <label for="org_des1">Description</label>
+                          <textarea name="org_des1"></textarea>
+                        </li>
+                        <li>
+                          <label for="org_name2">Organization Name</label>
+                          <input type="text" name="org_name2" placeholder="Organization Name">
+                          <label for="org_start_date2">Start Date</label>
+                          <input type="month" name="org_start_date2">
+                          <label for="org_end_date2">End Date</label>
+                          <input type="month" name="org_end_date2">
+                          <label for="org_des2">Description</label>
+                          <textarea name="org_des2"></textarea>
+                        </li>
+                      </ol>
+                      <ol>
+                        <h3>Projects</h3>
+                        <li>
+                          <label for="project_name1">Project Name</label>
+                          <input type="text" name="project_name1" placeholder="Project Name">
+                          <label for="">Description</label>
+                          <textarea name="project_des1"></textarea>
+                        </li>
+                        <li>
+                          <label for="project_name2">Project Name</label>
+                          <input type="text" name="project_name2" placeholder="Project Name">
+                          <label for="">Description</label>
+                          <textarea name="project_des2"></textarea>
+                        </li>
+                        <li>
+                          <label for="project_name3">Project Name</label>
+                          <input type="text" name="project_name3" placeholder="Project Name">
+                          <label for="">Description</label>
+                          <textarea name="project_des3"></textarea>
+                        </li>
+                      </ol>
+                      <ol>
+                        <h3>Certificate</h3>
+                        <li>
+                          <label for="Certificate_name1">Certificate Name</label>
+                          <input type="text" name="Certificate_name1" placeholder="Certificate Name">
+                          <label for="">Organization Name</label>
+                          <input type="text" name="Certificate_org_name1" placeholder="Organization Name">
+                          <label for="">Date</label>
+                          <input type="date" name="Certificate_date1">
+                        </li>
+                        <li>
+                          <label for="Certificate_name2">Certificate Name</label>
+                          <input type="text" name="Certificate_name2" placeholder="Certificate Name">
+                          <label for="">Organization Name</label>
+                          <input type="text" name="Certificate_org_name2" placeholder="Organization Name">
+                          <label for="">Date</label>
+                          <input type="date" name="Certificate_date2">
+                        </li>
+                        <li>
+                          <label for="Certificate_name3">Certificate Name</label>
+                          <input type="text" name="Certificate_name3" placeholder="Certificate Name">
+                          <label for="">Organization Name</label>
+                          <input type="text" name="Certificate_org_name3" placeholder="Organization Name">
+                          <label for="">Date</label>
+                          <input type="date" name="Certificate_date3">
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="form-footer">
+                      <input type="button" name="Next" value="Next">
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- JavaScript file for Theme Changing -->
     <script src="./JS/javascript.js"></script>

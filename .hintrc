@@ -5,6 +5,24 @@
   "hints": {
     "detect-css-reflows/composite": "off",
     "detect-css-reflows/paint": "off",
-    "detect-css-reflows/layout": "off"
-  }
+    "detect-css-reflows/layout": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 110",
+    "not firefox <= 111"
+  ]
 }
