@@ -1,0 +1,22 @@
+{
+    "folders": [
+		{
+			"path": "../../../mvc curd"
+		},
+		{
+			"path": "../../../Core php CRUD"
+		},
+		{
+			"path": "../../../GreenBhumiDashboard"
+		},
+		{
+			"path": "../../../MVC-Architecture"
+		},
+		{
+			"path": "../.."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "GreenBhumiDashboard-Version2"
+    }
+}
