@@ -78,7 +78,7 @@
                             <input type="button" class="btn btn-primary" value="Previous" name="previous">
                             <input type="button" class="btn btn-dark" value="Next" name="next">
                         </div> -->
-                         <div class="col-md-3 p-2 d-flex justify-content-end align-items-center">
+                         <div class="col-md-3 p-2 d-flex justify-content-end align-items-center"></div>
                            <input type="button" class="btn btn-primary" value="Submit" name="ansSubmit">
                         </div>
                     </div>
