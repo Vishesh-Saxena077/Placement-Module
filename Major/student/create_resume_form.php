@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SYTLE SHEET LINK -->
     <link rel="stylesheet" href="./css/styleStudent.css">
-    <link rel="stylesheet" href="./css/CreateResume.css">
+    <link rel="stylesheet" href="./css/Resume.css">
     <!-- CDN Library link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- charts CDN -->
@@ -17,6 +17,11 @@
     <!-- ICON LIBRARY -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Student | Dashboard</title>
+    <style>
+      label{
+        color: #fff;
+      }
+    </style>
   </head>
   <body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea'))return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
     <!-- Side Nav Bar -->
@@ -199,39 +204,39 @@
                 <div class="newNoticeBase">
                   <form action="" method="">
                     <div class="form-header">
-                      <div class="form-title"> Resume Info </div>
+                      <div class="form-title"> Create Resume </div>
                     </div>
                     <div class="form-body">
                       <!--User Name-->
-                      <h3>Full Name</h3>
+                      <label>Full Name</label>
                       <input name="About_User" id="About_User" placeholder="Name" />
                       <!--domain-->
-                      <h3>Domain</h3>
+                      <label>Domain</label>
                       <input name="domain" id="domain" placeholder="domain" />
                       <!--email-->
-                      <h3>Email</h3>
+                      <label>Email</label>
                       <input name="Semail" id="Semail" placeholder="email@example.com" />
                       <!--Phone Number-->
-                      <h3>Phone Number</h3>
+                      <label>Phone Number</label>
                       <input name="phonenumbner" id="tel" placeholder="Phone Number" />
                       <!-- About User -->
-                      <h3>About User</h3>
+                      <label>About User</label>
                       <textarea name="About_User" id="About_User"></textarea>
                       <!-- skills -->
-                      <h3>Skills</h3>
+                      <label>Skills</label>
                       <input type="text" name="skills" id="skills" placeholder="Skills">
                       <!-- hobbies -->
-                      <h3>Hobbies</h3>
+                      <label>Hobbies</label>
                       <input type="text" name="hobbies" id="hobbies" placeholder="hobbies">
                       <!-- Tools -->
-                      <h3>Tools</h3>
+                      <label>Tools</label>
                       <input type="text" name="Tools" id="Tools" placeholder="Tools">
                       <!-- Laguages -->
-                      <h3>Languages</h3>
+                      <label>Languages</label>
                       <input type="text" name="lang" id="lang" placeholder="Languages">
                       <!-- Experince -->
                       <ol>
-                        <h3>Experince</h3>
+                        <label>Experince</label>
                         <li>
                           <label for="org_name1">Organization Name</label>
                           <input type="text" name="org_name1" placeholder="Organization Name">
@@ -254,7 +259,7 @@
                         </li>
                       </ol>
                       <ol>
-                        <h3>Projects</h3>
+                        <label>Projects</label>
                         <li>
                           <label for="project_name1">Project Name</label>
                           <input type="text" name="project_name1" placeholder="Project Name">
@@ -275,7 +280,7 @@
                         </li>
                       </ol>
                       <ol>
-                        <h3>Certificate</h3>
+                        <label>Certificate</label>
                         <li>
                           <label for="Certificate_name1">Certificate Name</label>
                           <input type="text" name="Certificate_name1" placeholder="Certificate Name">

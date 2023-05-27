@@ -197,8 +197,11 @@
     gap: 10px;
 }
 
-.s1_1 .s1_2 .table_base .newNoticeBase form .form-body label {
+.s1_1 .s1_2 .table_base .newNoticeBase form .form-body label,
+.s1_1 .s1_2 .table_base .newNoticeBase form .form-body ol {
     width: 100%;
+    color: var(--clr-5);
+    text-align: left;
 }
 
 .s1_1 .s1_2 .table_base .newNoticeBase form .form-body h3 {
