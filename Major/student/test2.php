@@ -73,11 +73,11 @@
 
                 <!-- Footer -->
                 <div class="col-md-12 p-3">
-                    <div class="col-md-12 d-flex justify-content-between align-items-center gx-2">
-                        <div class="col-md-5 p-2">
+                    <div class="col-md-12 d-flex justify-content-end align-items-center gx-2">
+                        <!-- <div class="col-md-5 p-2">
                             <input type="button" class="btn btn-primary" value="Previous" name="previous">
                             <input type="button" class="btn btn-dark" value="Next" name="next">
-                        </div>
+                        </div> -->
                          <div class="col-md-3 p-2 d-flex justify-content-end align-items-center">
                            <input type="button" class="btn btn-primary" value="Submit" name="ansSubmit">
                         </div>
