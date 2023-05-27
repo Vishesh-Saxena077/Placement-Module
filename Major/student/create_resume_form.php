@@ -202,16 +202,31 @@
                       <div class="form-title"> Resume Info </div>
                     </div>
                     <div class="form-body">
+                      <!--User Name-->
+                      <h3>Full Name</h3>
+                      <input name="About_User" id="About_User" placeholder="Name" />
+                      <!--domain-->
+                      <h3>Domain</h3>
+                      <input name="domain" id="domain" placeholder="domain" />
+                      <!--email-->
+                      <h3>Email</h3>
+                      <input name="Semail" id="Semail" placeholder="email@example.com" />
+                      <!--Phone Number-->
+                      <h3>Phone Number</h3>
+                      <input name="phonenumbner" id="tel" placeholder="Phone Number" />
+                      <!-- About User -->
+                      <h3>About User</h3>
+                      <textarea name="About_User" id="About_User"></textarea>
                       <!-- skills -->
                       <h3>Skills</h3>
                       <input type="text" name="skills" id="skills" placeholder="Skills">
-                      <!-- skills -->
+                      <!-- hobbies -->
                       <h3>Hobbies</h3>
                       <input type="text" name="hobbies" id="hobbies" placeholder="hobbies">
                       <!-- Tools -->
                       <h3>Tools</h3>
                       <input type="text" name="Tools" id="Tools" placeholder="Tools">
-                      <!-- skills -->
+                      <!-- Laguages -->
                       <h3>Languages</h3>
                       <input type="text" name="lang" id="lang" placeholder="Languages">
                       <!-- Experince -->

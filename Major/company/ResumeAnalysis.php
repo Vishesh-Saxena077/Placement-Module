@@ -80,7 +80,7 @@
           <div class="menu">
               <ul class="menu-links">
                   <!-- Dashboard -->
-                  <li class="nav-links" id="subEle1" onclick="window.location.replace('/Placement-Module/Major/company');">
+                  <li class="nav-links" id="subEle1" onclick="window.location.replace('/company');">
                       <a href="#">
                           <i class="uil uil-estate icon"></i>
                           <span class="text nav-text">Dashboard</span>
@@ -210,7 +210,7 @@
                     <div class="box-2_1">
                         <div class="box-content">
                             <p id="title1">
-                                Criteria
+                                Analyze Resume
                             </p>
                         </div>
                     </div>
@@ -223,17 +223,15 @@
                                 <form action="" method="">
                                     <div class="form-header">
                                         <div class="form-title">
-                                            Create New Criteria
+                                            Analyze Resume
                                         </div>
                                     </div>
                                     <div class="form-body">
-                                      <input type="text" name="CompanyName" id="" placeholder="Company Name">
-                                      <input type="text" name="criteria1" id="" placeholder="12th Criteria">
-                                      <input type="text" name="criteria2" id="" placeholder="10th Criteria">
-                                      <input type="text" name="criteria3" id="" placeholder="CGPA Criteria">
+                                        <label for="input_resume_file">Upload File</label>
+                                      <input type="file" name="input_resume_file" id="input_resume_file">
                                     </div>
                                     <div class="form-footer">
-                                        <input type="button" name="Submit" value="Submit">
+                                        <input type="button" name="Submit" value="Next">
                                     </div>
                               </form>
                             </div>

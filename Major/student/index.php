@@ -152,8 +152,11 @@
                         <div class="subdata item1" onclick="window.location.replace('companyApplied.php');">
                             Apply Company
                         </div>
-                        <div class="subdata item1" onclick="window.location.replace('test1.php');">
-                            Training & Test
+                        <div class="subdata item1" onclick="window.location.replace('traning.php');">
+                            Training
+                        </div>
+                        <div class="subdata item1" onclick="window.location.replace('test_login.php');">
+                            Take Test
                         </div>
                     </div>
                 </div>

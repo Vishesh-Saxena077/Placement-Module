@@ -120,6 +120,9 @@
                       <div class="subdata item1" onclick="window.location.replace('newpostHistory.php');">
                           History
                       </div>
+                      <div class="subdata item1" onclick="window.location.replace('ResumeAnalysis.php');">
+                          Resume Analysis
+                      </div>
                     </div>
                 </div>
 
