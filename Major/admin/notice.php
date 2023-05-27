@@ -293,12 +293,7 @@
                                     <div class="form-footer">
                                         <input type="button" name="publish" value="Publish">
                                     </div>
-                              </form>
-
-                            
-                            
-                            
-                            
+                              </form>   
                         </div>
                         </div>
 
@@ -354,12 +349,6 @@
 
                     </div>
                 </div>
-
-                
-
-               
-
-
             </div>
 
             

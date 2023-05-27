@@ -149,6 +149,9 @@
                         <div class="subdata item1" onclick="window.location.replace('placement.php');">
                             Company
                         </div>
+                        <div class="subdata item1" onclick="window.location.replace('create_test.php');">
+                            Create Test
+                        </div>
                     </div>
                 </div>
 
