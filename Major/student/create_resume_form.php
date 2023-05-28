@@ -311,12 +311,14 @@
                           <label for="">End Date</label>
                           <input type="month" name="Certificate_end_date3">
                         </li>
-                        
                       </ol>
+                      
                     </div>
+
                     <div class="form-footer">
                       <input type="button" name="Next" value="Next" onclick="window.location.replace('displayresume.html');">
                     </div>
+
                   </form>
                 </div>
               </div>
