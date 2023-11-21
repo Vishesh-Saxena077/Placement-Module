@@ -93,20 +93,16 @@
     background-image: url(../images/cplusimg.png);
 }
 
-.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(1) {
-    background-image: url(../images/cplusimg.png);
+.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(2) {
+    background-image: url(../images/python.png);
 }
 
-.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(1) {
-    background-image: url(../images/cplusimg.png);
+.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(3) {
+    background-image: url(../images/java.png);
 }
 
-.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(1) {
-    background-image: url(../images/cplusimg.png);
-}
-
-.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(1) {
-    background-image: url(../images/cplusimg.png);
+.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:nth-child(4) {
+    background-image: url(../images/cpro.png);
 }
 
 .homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base:hover {
@@ -144,6 +140,8 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.homePage .homePage-base .box-3 .box-3-innerbase .box-3-stats-base .box-3-avtar {}
 
 .sidebar~.homePage .homePage-base .box-3 .box-3-innerbase {
     grid-template-columns: repeat(auto-fit, 45%);

@@ -1,0 +1,93 @@
+.C_content {
+    padding: 50px;
+    width: auto;
+    height: auto;
+}
+
+textarea {
+    outline: none;
+    border: solid 1px red;
+}
+
+
+/* ====================================================================================== */
+
+
+/* ====================================================================================== */
+
+
+/* ====================================================================================== */
+
+@media (max-width:1300px) {}
+
+@media (max-width:1000px) {}
+
+@media (max-width:900px) {
+    .s1_1 .s1_2 .filters .inputbase {
+        flex-direction: column;
+    }
+    .s1_1 .s1_2 .filters .inputbase input {
+        width: 80%;
+    }
+    .box-content .box-button {
+        flex-direction: column;
+    }
+    .s1_1 .s1_2 .table_base table tbody td:last-child .data a input {
+        width: 100px;
+        /* background-color: aquamarine; */
+    }
+    .s1_1 .s1_2 .table_base table {
+        width: 1000px;
+    }
+}
+
+
+/* ====================================================================================== */
+
+@media (max-width:800px) {}
+
+
+/* ====================================================================================== */
+
+@media (max-width:700px) {}
+
+@media (max-width:750px) {}
+
+@media (max-width:630px) {}
+
+
+/* ======================================================================================*/
+
+@media (max-width:500px) {
+    .sidebar {
+        z-index: 200;
+        width: 90%;
+    }
+    .homePage {
+        z-index: 90;
+    }
+    .homePage .homePage-base .head .head-1 .head-text .pannel-heading {
+        display: none;
+    }
+    .homePage .homePage-base .head .head-1 .Profile {
+        background: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-1 .pro-img {
+        height: 40px;
+        width: 40px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-name {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+    .homePage .homePage-base .head .head-1 .Profile .pro-1 .pro-name i {
+        font-size: 30px;
+    }
+}
